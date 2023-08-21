@@ -9,12 +9,12 @@ const WhatRESDIUMPROVIDES = () => {
     return (
         <MainContainer>
             <div className=''>
-                <h1 className=' text-[28px] md:text-[40px] text-center font-bold '>
+                <h1 className=' text-[28px] pb-10 md:text-[40px] text-center font-bold text-[#353535]'>
                     {
                         WhatRESDIUMPROVIDESConstants.title
                     }
                 </h1>
-                <div className='flex lg:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-20 w-full gap-10'>
+                <div className='flex lg:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-20 w-full gap-10 md:gap-20'>
                     <div className=' w-full lg:w-[50%]  lg:text-start text-center  space-y-8'>
                         <h1 className='text-[32px] font-semibold text-[#414141] leading-[36px]'>
                             {
