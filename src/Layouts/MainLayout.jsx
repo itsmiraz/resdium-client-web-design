@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Montserrat } from '@next/font/google'
 import Header from '@/Components/Shared/Header/Header';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import { useRouter } from 'next/router';
 
 
 const montserrat = Montserrat({
@@ -8,12 +10,21 @@ const montserrat = Montserrat({
     weight: ["200", "300", "400", "500", "600", "700"],
 });
 const MainLayout = ({ children }) => {
-
+    const ref = useRef(null);
+    const router = useRouter();
+    const options = {
+        smooth: true,
+    };
     return (
         <div className={montserrat.className}>
             <div className="relative  mx-auto max-w-[1520px] transition-all duration-300 ease-in-out">
                 <Header />
-                {children}
+                <LocomotiveScrollProvider options={options} containerRef={ref} watch={[router.asPath]}>
+                    <div data-scroll-container ref={ref}>
+
+                        {children}
+                    </div>
+                </LocomotiveScrollProvider>
             </div>
         </div>
     );

@@ -1,8 +1,8 @@
 
 
-export const MAINBTN = ({title}) => {
+export const MAINBTN = ({ title, bg, textColor }) => {
     return (
-        <button className="teal-green-to-deep-blue-gradient px-4 py-2 font-medium text-white rounded-corners-sm">
+        <button className={` ${bg ? `bg-[${bg}] text-[${textColor}]` : 'teal-green-to-deep-blue-gradient text-white'}  px-4 py-2 font-medium  rounded-corners-sm`}>
             {
                 title
             }
