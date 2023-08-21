@@ -31,4 +31,18 @@ const BuildYourOnlineEmpireConstants = {
   ],
 };
 
-export { HeroConstants, BuildYourOnlineEmpireConstants };
+const WhatRESDIUMPROVIDESConstants = {
+  title: "What RESDIUM PROVIDES?",
+  subtitle: "Our Core Service: Transformative  Web Development",
+  desc: "At RESDIUM, our core service revolves around crafting exceptional web  development solutions that redefine your online presence. From creating  visually captivating designs to implementing cutting-edge technologies,  we ensure your website becomes a powerful tool for business growth. Our  focus is on delivering streamlined user experiences that captivate your audience,  boost your online visibility, and provide a solid foundation for your digital success.",
+  lastDesc:
+    "Ready to harness the power of transformative web development? Let`s get started.",
+  cta1: "GET STARTED",
+  cta1Link: "",
+  cta2: "READ MORE",
+  cta2Link: "",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692597748/resdium-assets/what-redium-provides_bwmzqm.webp",
+  alt: "what-resdium-provides-img",
+};
+
+export { HeroConstants, BuildYourOnlineEmpireConstants ,WhatRESDIUMPROVIDESConstants};

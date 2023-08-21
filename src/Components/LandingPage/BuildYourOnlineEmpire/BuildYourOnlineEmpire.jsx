@@ -12,11 +12,11 @@ const BuildYourOnlineEmpire = () => {
                 <h1 className='text-[24px] lg:text-[32px] font-bold text-center text-white'>
                     {BuildYourOnlineEmpireConstants.title}
                 </h1>
-                <div className='flex lg:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-20 w-full gap-10'>
+                <div className='flex md:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-20 w-full gap-10'>
                     <div className=' w-full lg:w-[50%]  space-y-8'>
                         {
                             BuildYourOnlineEmpireConstants?.steps.map((data) =>
-                                <div key={data.id} className='space-y-2 lg:text-start text-center'>
+                                <div key={data.id} className='space-y-2 md:text-start text-center'>
                                     <h1 className='text-xl font-semibold text-white'>{data.title}</h1>
                                     <p className='text-xs text-[#D9D9D9]'>
                                         <Balancer>
@@ -29,7 +29,7 @@ const BuildYourOnlineEmpire = () => {
                         }
                     </div>
                     <div className='md:w-fit w-[80%]'  >
-                        <Image width={508} className='mx-auto ' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
+                        <Image width={508} className='mx-auto' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
                     </div>
                 </div>
             </div>

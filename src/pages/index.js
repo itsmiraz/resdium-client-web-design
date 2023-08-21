@@ -1,6 +1,7 @@
 import Head from "next/head";
 import LandingHero from "@/Components/LandingPage/LandingHero/LandingHero";
 import BuildYourOnlineEmpire from "@/Components/LandingPage/BuildYourOnlineEmpire/BuildYourOnlineEmpire";
+import WhatRESDIUMPROVIDES from "@/Components/LandingPage/WhatRESDIUMPROVIDES/WhatRESDIUMPROVIDES";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
         />
       </Head>
       <LandingHero />
-      <BuildYourOnlineEmpire/>
+      <BuildYourOnlineEmpire />
+      <WhatRESDIUMPROVIDES/>
     </main>
   );
 }
