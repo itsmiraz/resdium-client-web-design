@@ -9,7 +9,7 @@ const Header = () => {
     const [open, setOpen] = useState(true);
 
     return (
-        <header className='sticky top-0 flex top-50  justify-between items-center py-4 md:py-6 px-4 md:px-10 bg-[#F4F4F4]'>
+        <header className='sticky top-0 flex top-50  justify-between items-center py-4 md:py-6 px-4 md:px-10 lg:px-20 bg-[#F4F4F4]'>
             {/* Logo */}
             <div>
                 <Link href={'/'}>

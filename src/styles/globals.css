@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Css */
 .body {
   scroll-behavior: "smooth" !important;
   transition: opacity 0.3s ease-in-out, transform 0.5s ease;
@@ -10,6 +11,8 @@ html {
   scroll-behavior: smooth;
   transition: opacity 0.4s ease-in-out, transform 0.5s ease;
 }
+
+/* Scroll Bar Customizations */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -21,4 +24,33 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #727272;
+}
+
+
+/* Gradients */
+.teal-green-to-deep-blue-gradient {
+  background: linear-gradient(to right, #3C6E71, #01437C);
+}
+
+
+/* Iconic Corner Radius */
+.rounded-corners-sm {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.rounded-corners-md {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.rounded-corners-lg {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.rounded-corners-xl {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.rounded-corners-2xl {
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
