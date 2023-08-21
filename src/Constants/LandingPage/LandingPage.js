@@ -45,4 +45,32 @@ const WhatRESDIUMPROVIDESConstants = {
   alt: "what-resdium-provides-img",
 };
 
-export { HeroConstants, BuildYourOnlineEmpireConstants ,WhatRESDIUMPROVIDESConstants};
+const FAQS = [
+  {
+    title: "What services does RESDIUM offer?",
+    desc: "Resdium specializes in a wide range of web development services, including website design, front-end and back-end development, e-commerce solutions, custom web applications, content management systems (CMS), and more.",
+  },
+  {
+    title: "What technologies does Resdium use in web development?",
+    desc: "Resdium stays current with the latest web development technologies and frameworks, including HTML5, CSS3, JavaScript, React, Next JS , Tailwind, MongoDB , Node.js etc. Our developers ensure your website is modern and efficient.",
+  },
+  {
+    title: "Will my website be mobile-friendly and responsive?",
+    desc: "Certainly. Resdium places great emphasis on responsive web design, ensuring seamless functionality and aesthetics across various devices, from desktops to smartphones.",
+  },
+  {
+    title: "How long does a typical web development project take?",
+    desc: "Project timelines depend on project complexity and specific requirements. Resdium establishes a realistic timeline and provides regular progress updates.",
+  },
+  {
+    title: "What is the cost of Resdium's web development services?",
+    desc: "Costs vary based on project scope, features, and other factors. Resdium provides tailored pricing based on your needs, offering a detailed quote after in-depth project discussions.",
+  },
+];
+
+export {
+  HeroConstants,
+  BuildYourOnlineEmpireConstants,
+  WhatRESDIUMPROVIDESConstants,
+  FAQS
+};
