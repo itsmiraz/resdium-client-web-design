@@ -9,12 +9,12 @@ const WhatRESDIUMPROVIDES = () => {
     return (
         <MainContainer>
             <div className=''>
-                <h1 className=' text-[28px] pb-10 md:text-[40px] text-center font-bold text-[#353535]'>
+                <h1 className=' text-[28px] pb-4 md:pb-10 md:text-[40px] text-center font-bold text-[#353535]'>
                     {
                         WhatRESDIUMPROVIDESConstants.title
                     }
                 </h1>
-                <div className='flex lg:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-20 w-full gap-10 md:gap-20'>
+                <div className='flex lg:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-10 md:mt-20 w-full gap-10 md:gap-20'>
                     <div className=' w-full lg:w-[50%]  lg:text-start text-center  space-y-8'>
                         <h1 className='text-[32px] font-semibold text-[#414141] leading-[36px]'>
                             {
@@ -37,7 +37,7 @@ const WhatRESDIUMPROVIDES = () => {
                         </p>
                         <MAINBTN title={WhatRESDIUMPROVIDESConstants.cta1} />
                     </div>
-                    <div className='md:w-fit w-[80%]'  >
+                    <div className='md:w-fit w-[100%]'  >
                         <Image width={508} className='mx-auto' height={403} src={WhatRESDIUMPROVIDESConstants.img} alt={WhatRESDIUMPROVIDESConstants.alt} />
                     </div>
                 </div>
