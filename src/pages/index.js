@@ -15,6 +15,10 @@ export default function Home() {
           name="description"
           content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
         />
+        <meta
+          name="google-site-verification"
+          content="01JMCDAiWgBjv7QWqWk2v2Tg-DbZo3SWxq3uYzIf9kc"
+        />
       </Head>
       <LandingHero />
     </main>
