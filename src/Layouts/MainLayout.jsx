@@ -11,7 +11,7 @@ const MainLayout = ({ children }) => {
 
     return (
         <div className={montserrat.className}>
-            <div className="relative mx-auto max-w-[1520px] transition-all duration-300 ease-in-out">
+            <div className="relative  mx-auto max-w-[1520px] transition-all duration-300 ease-in-out">
                 <Header />
                 {children}
             </div>
