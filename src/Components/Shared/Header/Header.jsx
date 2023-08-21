@@ -6,7 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
 
 const Header = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     return (
         <header className='sticky top-0 flex top-50  justify-between items-center py-4 md:py-6 px-4 md:px-10 lg:px-20 bg-[#F4F4F4]'>
@@ -19,7 +19,7 @@ const Header = () => {
 
             {/* Menus */}
             <div
-                className={`lg:static absolute  ${open ? "left-0 scale-100" : "left-[-1000px] scale-0"} lg:scale-100 transition-all duration-300 ease-in-out top-16 lg:h-full h-screen flex justify-center items-center lg:w-fit w-full bg-[#F4F4F4] `}>
+                className={`lg:static absolute  ${open ? "left-0 scale-100" : "left-[-1000px] scale-0"} lg:scale-100 transition-all duration-300 ease-in-out top-14 lg:h-full h-screen flex justify-center items-center lg:w-fit w-full bg-[#F4F4F4] `}>
                 <ul className='flex lg:flex-row flex-col items-center gap-6 lg:gap-10 font-medium bg-[#F4F4F4]'>
                     <li>
                         <p className='cursor-pointer'>HOME</p>
