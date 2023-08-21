@@ -1,7 +1,6 @@
-import Image from "next/image";
-import logo from "../Assets/Logos/resdium-logo.webp";
 import Head from "next/head";
 import LandingHero from "@/Components/LandingPage/LandingHero/LandingHero";
+import BuildYourOnlineEmpire from "@/Components/LandingPage/BuildYourOnlineEmpire/BuildYourOnlineEmpire";
 
 export default function Home() {
   return (
@@ -21,6 +20,7 @@ export default function Home() {
         />
       </Head>
       <LandingHero />
+      <BuildYourOnlineEmpire/>
     </main>
   );
 }

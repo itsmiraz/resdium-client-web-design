@@ -51,6 +51,6 @@ html {
   border-bottom-right-radius: 40px;
 }
 .rounded-corners-2xl {
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
