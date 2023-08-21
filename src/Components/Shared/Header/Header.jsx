@@ -6,7 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
 
 const Header = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     return (
         <header className='sticky top-0 flex top-50  justify-between items-center py-4 md:py-6 px-4 md:px-10 lg:px-20 bg-[#F4F4F4]'>
