@@ -21,7 +21,6 @@ const ContactUs = () => {
       </Head>
 
       <div className="absolute z-10 top-0 left-0 h-[591px] w-full bg-[#284B63] md:rounded-bl-[80px]"></div>
-
       <div className="relative px-6 md:px-10 lg:px-20 py-20 lg:py-32 z-20 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20">
         <div className="space-y-4">
           <h2 className="text-xl font-medium text-white">CONTACT US</h2>
