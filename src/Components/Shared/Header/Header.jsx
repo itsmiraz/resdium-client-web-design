@@ -21,7 +21,7 @@ const Header = () => {
                 className={`lg:static absolute  ${open ? "left-0 scale-100" : "left-[-1000px] scale-0"} lg:scale-100 transition-all duration-300 ease-in-out top-14 lg:h-full h-screen flex justify-center items-center lg:w-fit w-full bg-[#F4F4F4] `}>
                 <ul className='flex lg:flex-row flex-col items-center gap-6 lg:gap-10 font-medium bg-[#F4F4F4]'>
                     <li>
-                        <Link href={'/'}>
+                        <Link onClick={() => setOpen(!open)} href={'/'}>
                             <p className='cursor-pointer'>HOME</p>
                         </Link>
                     </li>
@@ -32,7 +32,7 @@ const Header = () => {
                         <p className='cursor-pointer'>ABOUT</p>
                     </li>
                     <li>
-                        <Link href={'/contactUs'}>
+                        <Link onClick={() => setOpen(!open)} href={'/contactUs'}>
                             <p className='cursor-pointer'>CONTACT</p>
                         </Link>
                     </li>

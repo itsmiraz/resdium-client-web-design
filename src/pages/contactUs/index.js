@@ -1,4 +1,3 @@
-import { MAINBTN } from "@/Components/Modules/Buttons/Buttons";
 import Link from "next/link";
 import React from "react";
 import {
@@ -83,7 +82,7 @@ const ContactUs = () => {
         </div>
         <div className="">
           {/* Form */}
-          <div className="bg-white drop-shadow-md md:p-8 lg:p-14 sticky top-32 rounded-ss-3xl rounded-ee-3xl space-y-6">
+          <div className="bg-white md:drop-shadow-md md:p-8 lg:p-14 sticky top-32 rounded-ss-3xl rounded-ee-3xl space-y-6">
             {/* Name */}
 
             <div>
