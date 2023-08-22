@@ -26,7 +26,11 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <p className='cursor-pointer'>SERVICES</p>
+                        <Link onClick={() => setOpen(!open)} href={'/service'}>
+
+                            <p className='cursor-pointer'>SERVICES</p>
+                        </Link>
+
                     </li>
                     <li>
                         <p className='cursor-pointer'>ABOUT</p>
