@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import {
@@ -11,6 +12,14 @@ import { Balancer } from "react-wrap-balancer";
 const ContactUs = () => {
   return (
     <section className="relative">
+      <Head>
+        <title>Contact Us | Resdium - Web Solutions Agency</title>
+        <meta
+          name="description"
+          content="Get in touch with Resdium, a web solutions agency, for all your web-related needs. Contact us for web design, development, and other digital solutions."
+        ></meta>
+      </Head>
+
       <div className="absolute z-10 top-0 left-0 h-[591px] w-full bg-[#284B63] md:rounded-bl-[80px]"></div>
 
       <div className="relative px-6 md:px-10 lg:px-20 py-20 lg:py-32 z-20 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20">
