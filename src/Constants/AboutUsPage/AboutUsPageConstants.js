@@ -52,10 +52,11 @@ export const AboutUsWhyChooseUs = [
     alt: "communication-icon",
     desc: "We value open communication and transparency. We keep you in the loop at every stage of development.",
   },
-  {
-    title: "Collaborative Approach",
-    icon: CollaborativeApproach,
-    alt: "collaborativeapproach-icon",
-    desc: "We see our clients as collaborators. Your insights fuel our creativity, resulting in projects that truly reflect your vision.",
-  },
+  // {
+  //   title: "Collaborative Approach",
+  //   icon: CollaborativeApproach,
+  //   backGround:'#00546B',
+  //   alt: "collaborativeapproach-icon",
+  //   desc: "We see our clients as collaborators. Your insights fuel our creativity, resulting in projects that truly reflect your vision.",
+  // },
 ];
