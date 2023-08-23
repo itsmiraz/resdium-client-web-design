@@ -23,7 +23,6 @@ const ServicePageHero = () => {
                 <MAINBTN title={'Get Started'} />
 
             </div>
-
         </section>
     );
 };

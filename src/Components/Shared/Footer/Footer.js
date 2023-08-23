@@ -25,13 +25,19 @@ const Footer = () => {
           <h1 className="text-white pt-6 pb-2 font-medium text-xl">Explore</h1>
           <ul className="text-[#E2E2E2] text-sm space-y-2">
             <li>
-              <p>Home</p>
+              <Link href={"/"}>
+                <p>Home</p>
+              </Link>
             </li>
             <li>
-              <p>Services</p>
+              <Link href={"/service"}>
+                <p>Services</p>
+              </Link>
             </li>
             <li>
-              <p>About</p>
+              <Link href={"/aboutUs"}>
+                <p>About</p>
+              </Link>
             </li>
             <li>
               <Link href={"/contactUs"}>
