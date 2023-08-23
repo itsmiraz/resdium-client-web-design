@@ -1,5 +1,6 @@
 import AboutUsHero from "@/Components/AboutUsPage/AboutUsHero/AboutUsHero";
 import AboutUsSection from "@/Components/AboutUsPage/AboutUsSection/AboutUsSection";
+import WhyChoosseUS from "@/Components/AboutUsPage/WhyChoosseUS/WhyChoosseUS";
 import Head from "next/head";
 import React from "react";
 
@@ -19,6 +20,7 @@ const AboutUs = () => {
       </Head>
       <AboutUsHero />
       <AboutUsSection />
+      <WhyChoosseUS/>
     </div>
   );
 };

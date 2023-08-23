@@ -30,22 +30,25 @@ export const AboutUsConstants = [
   },
 ];
 
-export const AboutUs = [
+export const AboutUsWhyChooseUs = [
   {
     title: "Expertise",
     icon: Expertise,
+    backGround:'#284B63',
     alt: "expertise-icon",
     desc: "Our team boasts a wealth of experience and expertise, ensuring      that your project is in capable hands.",
   },
   {
     title: "Tailored Solutions",
     icon: TailoredSolutions,
+    backGround:'#3C6E71',
     alt: "tailored-solutions-icon",
     desc: "We don't believe in one-size-fits-all. Our solutions are tailor-made to address your unique needs and challenges.",
   },
   {
     title: "Communication",
     icon: Communication,
+    backGround:'#212121',
     alt: "communication-icon",
     desc: "We value open communication and transparency. We keep you in the loop at every stage of development.",
   },
