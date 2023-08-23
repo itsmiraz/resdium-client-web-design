@@ -39,3 +39,52 @@ export const ServicewhatWeOfferConstants = [
     desc: "Intuitive Navigation – User-centric design ensures effortless navigation, guiding visitors to desired information and converting them into customers.",
   },
 ];
+
+export const ServiceProccesConstants = [
+  {
+    title: "Discovery and Planning",
+    backGroundColor: "3C6E71",
+    borderCss:' rounded-ss-[40px] rounded-ee-[40px]',
+    desc: "We begin by delving deep into your goals and ideas. Our team    collaborates closely with you to understand your vision, target audience, and  desired functionality. This phase lays the foundation for a tailored development strategy.",
+    time: "1-2 Days",
+  },
+  {
+    title: "Design and Prototype",
+    backGroundColor: "284B63",
+    borderCss:' rounded-ss-[40px] rounded-ee-[40px]',
+
+    desc: "Our expert designers craft wireframes and prototypes  that visualize the user experience. We  ensure the design    aligns with your brand identity and provides an intuitive interface for your audience to interact with.",
+    time: "1-2 Weeks",
+  },
+  {
+    title: "Development and Coding",
+    backGroundColor: "212121",
+    borderCss:'rounded-ss-[40px] ',
+    desc: "With the blueprint in place, our skilled developers get to work. We write clean, efficient code and implement the design to  create a functional website that's responsive and optimized  for various devices.",
+    time: "2-3 Weeks",
+  },
+  {
+    title: "Testing and Quality",
+    backGroundColor: "4B4F55",
+    borderCss:' rounded-ss-[40px] rounded-ee-[40px]',
+
+    desc: "Assurance: Before launch, we rigorously test your website across browsers, devices, and scenarios. This meticulous  quality assurance ensures a seamless user experience and identifies and fixes any bugs or issues.",
+    time: "1 Week",
+  },
+  {
+    title: "Client Collaboration",
+    backGroundColor: "D9D9D9",
+    borderCss:' rounded-ss-[40px] rounded-ee-[40px]',
+
+    desc: "Throughout the process, we maintain transparent  communication. We provide regular updates and seek your feedback to ensure the project is on track and aligns with  your expectations.",
+    time: "1 Week",
+  },
+  {
+    title: "Launch and Deployment",
+    backGroundColor: "0B657D",
+    borderCss:' rounded-ss-[40px] rounded-ee-[40px]',
+
+    desc: "Once everything is perfected, we're ready for launch. Our team handles the technical aspects of deployment to ensure a smooth transition from development to a live, functioning  website.",
+    time: "1-2 Days",
+  },
+];
