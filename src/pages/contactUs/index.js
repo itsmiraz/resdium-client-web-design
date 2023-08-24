@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import  {toast} from 'react-hot-toast'
+import { toast } from "react-hot-toast";
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -13,6 +13,8 @@ import { Balancer } from "react-wrap-balancer";
 
 const ContactUs = () => {
   const [Service, setService] = useState("");
+const [loading, setloading] = useState(false);
+const [animation, setanimation] = useState(false);
 
   const handleForm = e => {
     e.preventDefault();
@@ -32,38 +34,35 @@ const ContactUs = () => {
       Service,
       message,
     };
-
+    setloading(true)
+    sendEmail(formData)
     console.log(formData);
+    form.reset()
   };
 
-
   // Send the email
- const sendEmail = ({formData}) => {
-  emailjs
-    .send(
-      "service_u7akfv4",
-      "template_wycft2j",
-      formData,
-      "cFlR-OODbt6GoWWpb"
-    )
-    .then(response => {
-      console.log("Email sent successfully!", response.text);
-      // Perform any desired actions upon successful email sending
-      
-      setloading(false);
-    })
-    .catch(error => {
-      console.error("Error sending email:", error);
+  const sendEmail = ( formData ) => {
+    emailjs
+      .send(
+        "service_okq3dcd",
+        "template_oaoyt08",
+        formData,
+        "KBUe2RdPLUH8fGq3V"
+      )
+      .then(response => {
+        console.log("Email sent successfully!", response.text);
+        // Perform any desired actions upon successful email sending
+        toast.success("We got your Email we will get back to you as soon as possible")
+        setloading(false);
+      })
+      .catch(error => {
+        console.error("Error sending email:", error);
 
-      // Handle the error case
-      setOnError(true);
-      toast.error("Something went Wrong!");
-      setloading(false);
-    });
-};
-
-
-
+        // Handle the error case
+        toast.error("Something went Wrong!");
+        setloading(false);
+      });
+  };
 
   return (
     <section className="relative">
@@ -204,11 +203,15 @@ const ContactUs = () => {
                 <option disabled value="">
                   Choose an Option
                 </option>
-                <option value="Real Estate Company Website">Real Estate Company Website</option>
+                <option value="Real Estate Company Website">
+                  Real Estate Company Website
+                </option>
                 <option value="E-commerce Web Site">E-commerce Web Site</option>
                 <option value="Blog Web Site">Blog Web Site</option>
                 <option value="Portfolio Web Site">Portfolio Web Site</option>
-                <option value="Landing Page Web Site">Landing Page Web Site</option>
+                <option value="Landing Page Web Site">
+                  Landing Page Web Site
+                </option>
                 <option value="News Portal">News Portal Web Site</option>
                 <option value="Other">Other</option>
               </select>
@@ -240,7 +243,7 @@ const ContactUs = () => {
               />
             </div>
             <button className="teal-green-to-deep-blue-gradient w-full  text-white  px-4 py-3 font-medium  rounded-corners-sm">
-              SUBMIT
+           { loading?  "Loading":" SUBMIT"}
             </button>
           </form>
         </div>
