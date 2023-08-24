@@ -32,6 +32,14 @@ html {
   background: linear-gradient(to right, #3C6E71, #01437C);
 }
 
+.card {
+  transition: transform 0.5s ease; /* Smooth transition for scaling */
+  transform: scale(1); /* Initial scale */
+}
+
+.scaled {
+  transform: scale(0.95); /* Scale down by 5% */
+}
 
 /* Iconic Corner Radius */
 .rounded-corners-sm {
