@@ -4,6 +4,7 @@ import Header from '@/Components/Shared/Header/Header';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { useRouter } from 'next/router';
 import Footer from '@/Components/Shared/Footer/Footer';
+import { Toaster } from 'react-hot-toast';
 
 
 const montserrat = Montserrat({
@@ -23,6 +24,7 @@ const MainLayout = ({ children }) => {
                         {children}
                 <Footer/>
             </div>
+            <Toaster/>
         </div>
     );
 };

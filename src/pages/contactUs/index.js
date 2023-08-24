@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import  {toast} from 'react-hot-toast'
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -10,6 +12,59 @@ import {
 import { Balancer } from "react-wrap-balancer";
 
 const ContactUs = () => {
+  const [Service, setService] = useState("");
+
+  const handleForm = e => {
+    e.preventDefault();
+
+    const form = e.target;
+    const name = form.name.value;
+    const Email = form.email.value;
+    const linkedin = form.linkedin.value;
+    const companyName = form.company.value;
+    const message = form.message.value;
+
+    const formData = {
+      name,
+      Email,
+      linkedin,
+      companyName,
+      Service,
+      message,
+    };
+
+    console.log(formData);
+  };
+
+
+  // Send the email
+ const sendEmail = ({formData}) => {
+  emailjs
+    .send(
+      "service_u7akfv4",
+      "template_wycft2j",
+      formData,
+      "cFlR-OODbt6GoWWpb"
+    )
+    .then(response => {
+      console.log("Email sent successfully!", response.text);
+      // Perform any desired actions upon successful email sending
+      
+      setloading(false);
+    })
+    .catch(error => {
+      console.error("Error sending email:", error);
+
+      // Handle the error case
+      setOnError(true);
+      toast.error("Something went Wrong!");
+      setloading(false);
+    });
+};
+
+
+
+
   return (
     <section className="relative">
       <Head>
@@ -90,7 +145,10 @@ const ContactUs = () => {
         </div>
         <div className="">
           {/* Form */}
-          <div className="bg-white md:drop-shadow-md md:p-8 lg:p-14 sticky top-32 rounded-ss-3xl rounded-ee-3xl space-y-6">
+          <form
+            onSubmit={handleForm}
+            className="bg-white md:drop-shadow-md md:p-8 lg:p-14 sticky top-32 rounded-ss-3xl rounded-ee-3xl space-y-6"
+          >
             {/* Name */}
 
             <div>
@@ -99,6 +157,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
+                name="name"
+                required
                 className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
@@ -110,6 +170,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="email"
+                name="email"
+                required
                 className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
@@ -119,7 +181,9 @@ const ContactUs = () => {
                 Linkedin
               </label>
               <input
+                required
                 type="text"
+                name="linkedin"
                 className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
@@ -130,17 +194,23 @@ const ContactUs = () => {
                 Select the type of website you want
               </label>
               <select
+                value={Service}
+                required
+                onChange={e => setService(e.target.value)}
                 className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
                 name=""
                 id=""
               >
-                <option value="">Choose an Option</option>
-                <option value="">Real Estate Company Website</option>
-                <option value="">E-commerce Web Site</option>
-                <option value="">Blog Web Site</option>
-                <option value="">Portfolio Web Site</option>
-                <option value="">Landing Page Web Site</option>
-                <option value="">Other</option>
+                <option disabled value="">
+                  Choose an Option
+                </option>
+                <option value="Real Estate Company Website">Real Estate Company Website</option>
+                <option value="E-commerce Web Site">E-commerce Web Site</option>
+                <option value="Blog Web Site">Blog Web Site</option>
+                <option value="Portfolio Web Site">Portfolio Web Site</option>
+                <option value="Landing Page Web Site">Landing Page Web Site</option>
+                <option value="News Portal">News Portal Web Site</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
@@ -151,6 +221,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
+                required
+                name="company"
                 className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
@@ -162,13 +234,15 @@ const ContactUs = () => {
               </label>
               <textarea
                 type=""
+                required
+                name="message"
                 className="w-full h-32 bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
             <button className="teal-green-to-deep-blue-gradient w-full  text-white  px-4 py-3 font-medium  rounded-corners-sm">
               SUBMIT
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
