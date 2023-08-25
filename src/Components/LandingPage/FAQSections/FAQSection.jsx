@@ -5,7 +5,7 @@ import React from 'react';
 
 const FAQSection = () => {
     return (
-        <MainContainer>
+        <div className='px-20'>
             <div className='my-40'>
                  <h1 className=' text-[28px] pb-20 md:text-[40px] text-center font-bold text-[#353535]'>Frequently asked questions</h1>
                 <div className='max-w-[900px] mx-auto'>
@@ -14,7 +14,7 @@ const FAQSection = () => {
                     }
                 </div>
             </div>
-        </MainContainer>
+        </div>
     );
 };
 
