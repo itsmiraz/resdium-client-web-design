@@ -38,6 +38,7 @@ const [animation, setanimation] = useState(false);
     sendEmail(formData)
     console.log(formData);
     form.reset()
+    setService('')
   };
 
   // Send the email
@@ -45,7 +46,7 @@ const [animation, setanimation] = useState(false);
     emailjs
       .send(
         "service_okq3dcd",
-        "template_oaoyt08",
+        "template_qxonc7n",
         formData,
         "KBUe2RdPLUH8fGq3V"
       )
