@@ -4,6 +4,7 @@ import Image from 'next/image';
 import MainContainer from '@/Components/Shared/MainContainer/MainContainer';
 import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
 import { Balancer } from 'react-wrap-balancer';
+import Link from 'next/link';
 
 
 const LandingHero = () => {
@@ -21,7 +22,9 @@ const LandingHero = () => {
                             }
                         </Balancer>
                     </p>
-                    <MAINBTN title={HeroConstants.cta} />
+                    <Link href={'/contactUs'}>
+                        <MAINBTN title={HeroConstants.cta} />
+                    </Link>
                 </div>
                 <div className='md:w-fit w-[70%]'>
                     <Image lazy='false' loading='eager' width={400} height={400} src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
