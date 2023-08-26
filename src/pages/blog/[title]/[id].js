@@ -3,15 +3,19 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Balancer } from "react-wrap-balancer";
 
 const SingleBlog = () => {
   const router = useRouter();
 
   const { id } = router.query;
+  const [blogDetails, setBlogDetails] = useState({});
 
-  const blogDetails = BlogsConstants.find(blog => id !== blog?.id);
+  useEffect(() => {
+    const blog = BlogsConstants.find(blog =>  parseInt(id) === blog?.id);
+    setBlogDetails(blog);
+  }, [id]);
 
   const {
     title,
@@ -56,7 +60,7 @@ const SingleBlog = () => {
           <Image
             width={800}
             height={600}
-            className="w-full"
+            className="w-full scale-100 hover:scale-110 duration-300 transition-all"
             src={img}
             alt={alt}
           />
@@ -82,7 +86,7 @@ const SingleBlog = () => {
 
         {/* Content */}
         <section>
-          {content.map((data, i) => (
+          {content?.map((data, i) => (
             <div key={i} className="space-y-2 mb-10">
               <h1 className="text-xl font-semibold ">{data.section}</h1>
               <p className="lg:text-lg text-sm text-medium">
