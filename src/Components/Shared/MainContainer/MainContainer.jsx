@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContainer = ({children}) => {
     return (
-        <section className='h-full z-10 lg:h-screen flex flex-col justify-center items-center px-6 lg:py-0 py-20 md:px-20'>
+        <section className='h-full z-10 lg:h-full  flex flex-col justify-center items-center px-6 lg:py-32 py-20 md:px-20'>
             {children}
         </section>
     );

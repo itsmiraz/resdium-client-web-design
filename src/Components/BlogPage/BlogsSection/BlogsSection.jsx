@@ -5,7 +5,7 @@ import BlogCard from '../BlogCard/BlogCard';
 const BlogsSection = () => {
     return (
         <div className='py-20 px-20'>
-            <h1 className='text-center py-10 text-2xl font-semibold text-center'>
+            <h1 className='py-10 text-2xl font-semibold text-center'>
                 Blogs
             </h1>
             <div className='grid-cols-3 grid gap-10'>

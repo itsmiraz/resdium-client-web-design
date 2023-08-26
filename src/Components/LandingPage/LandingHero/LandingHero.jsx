@@ -22,9 +22,11 @@ const LandingHero = () => {
                             }
                         </Balancer>
                     </p>
-                    <Link href={'/contactUs'}>
-                        <MAINBTN title={HeroConstants.cta} />
-                    </Link>
+                    <div>
+                        <Link href={'/contactUs'}>
+                            <MAINBTN title={HeroConstants.cta} />
+                        </Link>
+                    </div>
                 </div>
                 <div className='md:w-fit w-[70%]'>
                     <Image lazy='false' loading='eager' width={400} height={400} src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
