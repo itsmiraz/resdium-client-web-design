@@ -1,8 +1,6 @@
-import MainContainer from '@/Components/Shared/MainContainer/MainContainer';
 import { BlogHeroConstants } from '@/Constants/BlogPage/BlogPageConstants';
 import Image from 'next/image';
 import React from 'react';
-import { Balancer } from 'react-wrap-balancer';
 
 const BlogPageHero = () => {
     return (
@@ -24,8 +22,7 @@ const BlogPageHero = () => {
                 <div className='lg:order-last order-first mx-auto'>
                     <Image width={500} className='rounded-ss-[30px] rounded-ee-[40px]' height={500} src={BlogHeroConstants.img} alt={BlogHeroConstants.alt} />
                 </div>
-            </div>
-         
+            </div> 
         </div>
     );
 };
