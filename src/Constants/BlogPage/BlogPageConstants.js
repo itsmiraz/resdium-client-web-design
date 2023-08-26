@@ -1,33 +1,26 @@
 export const BlogHeroConstants = {
-    title: 'Discover Digital Excellence',
-    desc: 'Explore our blog for insights and ideas in web design, development and digital marketing.',
-    img: 'https://res.cloudinary.com/djnlyzsmv/image/upload/v1692979873/blog-post-images/blog-page-hero-resdoiium_zorkzn.webp',
-    alt:"blog-page-resdium-hero-img"
-}
+  title: "Discover Digital Excellence",
+  desc: "Welcome to our blog, a treasure trove of insights and ideas at the forefront of web design, development, and digital marketing. Our platform is your gateway to unlocking the secrets of success in the ever-evolving digital landscape.",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692979873/blog-post-images/blog-page-hero-resdoiium_zorkzn.webp",
+  alt: "blog-page-resdium-hero-img",
+};
 
 export const BlogsConstants = [
   {
+    id: 12323,
+    date: "22/08/2023",
+    postedBy:'Resdum',
     title: "The Future of AI in Digital Marketing: Trends to Watch",
+    siteUrl: "the-Future-of-AI-in-Digital-Marketing-Trends-to-Watch",
     img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692978878/blog-post-images/Group_108_mxbafh.webp",
     alt: "future-of-ai-in-digital-marketing-img",
-    keywords: [
-      "AI in digital marketing",
-      "AI trends in marketing",
-      "Chatbots and marketing",
-      "Predictive analytics in marketing",
-      "Personalization with AI",
-      "Real-world AI marketing examples",
-      "Integrating AI in marketing strategies",
-      "Customer experiences and AI",
-      "Streamlining marketing with AI",
-      "Future of digital marketing",
-    ],
+    keywords:
+      "AI in digital marketing, AI trends in marketing,   Chatbots and marketing,  Predictive analytics in marketing,    Personalization with AI,   Real-world AI marketing examples,   Integrating AI in marketing strategies,  Customer experiences and AI,    Streamlining marketing with AI, Future of digital marketing,",
     meta_description:
       "Explore the dynamic impact of AI on digital marketing. Discover AI technologies such as chatbots, predictive analytics, and personalization. Learn how AI enhances customer experiences, streamlines marketing efforts, and gain insights from real-world AI-powered marketing campaigns. Get practical tips on integrating AI into your marketing strategies for a successful digital future.",
-    outline: [
-        "Introduction to the growing role of AI in digital marketing.   Discuss various AI technologies like chatbots, predictive analytics, personalization, etc. Explain how AI can enhance customer experiences and streamline marketing efforts. Highlight real-world examples of AI-powered digital marketing campaigns. Provide tips for integrating AI into digital marketing strategies.",
-     
-    ],
+    outline:
+      "Introduction to the growing role of AI in digital marketing.   Discuss various AI technologies like chatbots, predictive analytics, personalization, etc. Explain how AI can enhance customer experiences and streamline marketing efforts. Highlight real-world examples of AI-powered digital marketing campaigns. Provide tips for integrating AI into digital marketing strategies.",
+
     content: [
       {
         section: "Introduction to the Growing Role of AI in Digital Marketing",
@@ -63,4 +56,5 @@ export const BlogsConstants = [
       },
     ],
   },
+  
 ];

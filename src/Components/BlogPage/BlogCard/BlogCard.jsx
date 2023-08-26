@@ -1,5 +1,6 @@
 import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const BlogCard = ({ blog }) => {
@@ -8,8 +9,9 @@ const BlogCard = ({ blog }) => {
         img,
         alt,
         title,
-        outline
-
+        outline,
+        id,
+        siteUrl
     } = blog
 
 
@@ -20,9 +22,14 @@ const BlogCard = ({ blog }) => {
             <div className='p-4'>
                 <h1 className='text-2xl font-semibold'>{title}</h1>
                 <p className='text-xs py-4'>
-                    {outline.slice(0, 10)}
+                    {outline.slice(0, 200)}..
                 </p>
-                <MAINBTN title={'Read More'}/>
+                <div>
+                    <Link href={`/blog/${siteUrl}/${id}`}>
+                    
+                <MAINBTN title={'Read More'} />
+                    </Link>
+               </div>
             </div>
 
         </div>
