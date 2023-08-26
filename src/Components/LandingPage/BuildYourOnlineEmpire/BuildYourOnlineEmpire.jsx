@@ -7,7 +7,7 @@ import { Balancer } from 'react-wrap-balancer';
 
 const BuildYourOnlineEmpire = () => {
     return (
-        <div className='bg-[#284B63] h-fit lg:h-screen flex flex-col justify-center items-center my-20 w-full  lg:rounded-ss-[80px] lg:rounded-ee-[80px] py-10 px-6 lg:px-20'>
+        <div className='bg-[#284B63] h-fit lg:h-screen flex flex-col justify-center items-center my-20 w-full  lg:rounded-ss-[60px] lg:rounded-ee-[60px] py-20 px-6 lg:px-20'>
             <div>
                 <h1 className='text-[24px] lg:text-[32px] font-bold text-center text-white'>
                     {BuildYourOnlineEmpireConstants.title}
@@ -16,7 +16,7 @@ const BuildYourOnlineEmpire = () => {
                     <div className=' w-full lg:w-[50%]  space-y-8'>
                         {
                             BuildYourOnlineEmpireConstants?.steps.map((data) =>
-                                <div key={data.id} className='space-y-2 md:text-start text-center'>
+                                <div key={data.id} className='space-y-2 md:text-start text-start'>
                                     <h1 className='text-xl font-semibold text-white'>{data.title}</h1>
                                     <p className='text-xs text-[#D9D9D9]'>
                                         <Balancer>
@@ -28,7 +28,7 @@ const BuildYourOnlineEmpire = () => {
                             )
                         }
                     </div>
-                    <div className='md:w-fit w-[80%]'  >
+                    <div className='md:w-fit w-[100%]'  >
                         <Image width={508} className='mx-auto' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
                     </div>
                 </div>
