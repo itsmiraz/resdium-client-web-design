@@ -99,7 +99,7 @@ export const BlogsConstants = [
     "date": "23/08/2023",
     "postedBy": "Resdium",
     "title": "Optimizing User Experience: Mobile-First Design Principles",
-    "siteUrl": "optimizing-user-experience-mobile-first-design-principles",
+    "siteUrl": "optimizingUserExperienceMobileFirstDesignPrinciples",
     "img": "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693050079/blog-post-images/UX_Picture_resdium_vnpuaa.webp",
     "alt": "mobile-first-design-img",
     "keywords": "mobile-first design, responsive design, user experience, mobile-friendly UX, website performance optimization, SEO benefits, Google mobile-first indexing",
