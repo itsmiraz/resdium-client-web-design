@@ -87,7 +87,7 @@ const Footer = () => {
               <Link
                 target="_blank"
                 aria-label="Instagram Link"
-                href={"https://www.instagram.com/rezdium/"}
+                href={"https://www.instagram.com/resdiumdigital/"}
               >
                 <AiFillInstagram />
               </Link>
