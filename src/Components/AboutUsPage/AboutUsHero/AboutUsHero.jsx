@@ -2,6 +2,7 @@ import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
 import MainContainer from '@/Components/Shared/MainContainer/MainContainer';
 import { AboutUsHeroConstants } from '@/Constants/AboutUsPage/AboutUsPageConstants';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { Balancer } from 'react-wrap-balancer';
 
@@ -20,9 +21,14 @@ const AboutUsHero = () => {
                             }
                         </Balancer>
                     </p>
-                    <MAINBTN title={AboutUsHeroConstants.cta} />
+                    <div >
+                        <Link href={'/contactUs'}>
+
+                            <MAINBTN title={AboutUsHeroConstants.cta} />
+                        </Link>
+                    </div>
                 </div>
-                <div className='md:w-fit w-[70%]'>
+                <div className='md:w-fit w-[100%]'>
                     <Image lazy='false' loading='eager' width={600} height={400} src={AboutUsHeroConstants.img} alt={AboutUsHeroConstants.alt} />
                 </div>
             </div>
