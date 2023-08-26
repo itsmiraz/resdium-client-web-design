@@ -10,9 +10,9 @@ const Accordion = ({ title, content, i, length }) => {
 
 
     return (
-        <div className="mb-10 md:mb-10  select-none">
+        <div className="mb-2 md:mb-10  select-none">
             <button
-                className="w-full gap-x-6 text-left flex  justify-between items-center font-medium text-lg text-[#3E3F46] md:text-[20px] lg:text-[22px]"
+                className="w-full gap-x-6 text-left flex  justify-between items-center font-medium text-lg leading-[22px] text-[#3E3F46] md:text-[20px] lg:text-[22px]"
                 onClick={toggleAccordion}
             >
                 {title}

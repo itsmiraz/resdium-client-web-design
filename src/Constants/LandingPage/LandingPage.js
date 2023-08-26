@@ -4,13 +4,13 @@ const HeroConstants = {
   cta: "GET STARTED",
   ctaLink: "",
   heroimg:
-    "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692597748/resdium-assets/hero-resdium_zcefwn.webp",
+    "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693065524/resdium-assets/hero_graphic_hjno7m.webp",
   heroImgAlt: "resdium-hero-img",
 };
 
 const BuildYourOnlineEmpireConstants = {
   title: "BUILD YOUR ONLINE EMPIRE WITH US",
-  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692597748/resdium-assets/build-your-online-empire_d8sp3b.webp",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693064807/resdium-assets/build-your-brand-resdium_gxibjr.webp",
   alt: "build-your-online-empire-with-resdium-img",
   steps: [
     {
@@ -41,7 +41,7 @@ const WhatRESDIUMPROVIDESConstants = {
   cta1Link: "",
   cta2: "READ MORE",
   cta2Link: "",
-  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692597748/resdium-assets/what-redium-provides_bwmzqm.webp",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693064940/resdium-assets/whatresdiumProvides_qsze4p.webp",
   alt: "what-resdium-provides-img",
 };
 
