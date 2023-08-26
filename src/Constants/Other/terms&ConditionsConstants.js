@@ -1,5 +1,5 @@
 export const TermsAndConditionsConstants = {
-    "title": "Payment Terms",
+    "title": "Terms and Conditions",
     "content": [
       {
         "section": "Initial Payment",
@@ -44,4 +44,6 @@ export const TermsAndConditionsConstants = {
     
     ]
   }
+  
+ 
   

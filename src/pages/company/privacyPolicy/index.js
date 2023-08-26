@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     return (
         <section className='py-20 max-w-[900px] mx-auto px-6'>
             <Head>
-                <title>Terms and Conditions | Resdium</title>
+                <title>Privacy Policy | Resdium</title>
 
             </Head>
             <div>
