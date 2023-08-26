@@ -16,6 +16,14 @@ const SingleBlog = () => {
     const blog = BlogsConstants.find(blog =>  parseInt(id) === blog?.id);
     setBlogDetails(blog);
   }, [id]);
+    
+    
+    if (!blogDetails?.title) {
+        return <p className="text-center p-10">Loading</p>
+    }
+    
+
+
 
   const {
     title,
@@ -31,8 +39,8 @@ const SingleBlog = () => {
   } = blogDetails;
 
   return (
-    <div>
-      <Head>
+      <div>
+       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={meta_description} />
@@ -95,9 +103,12 @@ const SingleBlog = () => {
             </div>
           ))}
         </section>
-      </section>
+        </section> 
     </div>
   );
 };
 
 export default SingleBlog;
+       
+   
+      
