@@ -13,17 +13,13 @@ const SingleBlog = () => {
   const [blogDetails, setBlogDetails] = useState({});
 
   useEffect(() => {
-    const blog = BlogsConstants.find(blog =>  parseInt(id) === blog?.id);
+    const blog = BlogsConstants.find(blog => parseInt(id) === blog?.id);
     setBlogDetails(blog);
   }, [id]);
-    
-    
-    if (!blogDetails?.title) {
-        return <p className="text-center p-10">Loading</p>
-    }
-    
 
-
+  if (!blogDetails?.title) {
+    return <p className="text-center p-10">Loading</p>;
+  }
 
   const {
     title,
@@ -39,8 +35,8 @@ const SingleBlog = () => {
   } = blogDetails;
 
   return (
-      <div>
-       <Head>
+    <div>
+      <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={meta_description} />
@@ -100,15 +96,26 @@ const SingleBlog = () => {
               <p className="lg:text-lg text-sm text-medium">
                 <Balancer>{data.content}</Balancer>
               </p>
+              {data?.ul && (
+                <>
+                  <ul className="list-disc pl-10">
+                    {data.ul.map((lis, i) => (
+                      <li key={i}>{lis}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {data?.other && (
+                <p className="lg:text-lg text-sm text-medium">
+                  <Balancer>{data.other}</Balancer>
+                </p>
+              )}
             </div>
           ))}
         </section>
-        </section> 
+      </section>
     </div>
   );
 };
 
 export default SingleBlog;
-       
-   
-      
