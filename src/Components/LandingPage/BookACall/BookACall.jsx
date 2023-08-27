@@ -1,5 +1,3 @@
-import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
-import MainContainer from '@/Components/Shared/MainContainer/MainContainer';
 import Link from 'next/link';
 import React from 'react';
 
