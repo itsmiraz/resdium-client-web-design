@@ -271,13 +271,13 @@ export const BlogsConstants = [
     "id": 34567,
     "date": "28/08/2023",
     "postedBy": "Resdum",
-    "title": "The Impact of Technology on Society",
+    "title": "The Impact of Technology on Society in 2023",
     "siteUrl": "the-impact-of-technology-on-society",
     "img": "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693190405/blog-post-images/Imact_of_tech_on_socity_resdium_prwo4y.webp",
     "alt": "impact-of-tech-in-society-img",
     "keywords": "technology, society, impact, digital divide, gig economy, climate change",
     "meta_description": "Explore the impact of technology on society, from the digital divide to the rise of the gig economy and the impact of technology on climate change.",
-    "outline": "Discover the social, economic, and environmental implications of technology, and how we can ensure that technology is used for good.",
+    "outline": "Technology has had a profound impact on society, both positive and negative. It has made us more connected, but also more isolated. It has created new jobs, but also displaced others. It has made us more informed, but also more vulnerable to misinformation. It has the potential to solve our biggest problems, but it also has the potential to create new ones. The key is to use technology wisely and to make sure that it is used for good.",
     "content": [
       {
         "section": "Introduction",

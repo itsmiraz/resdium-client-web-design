@@ -1,3 +1,6 @@
+import GetStartedSection from "@/Components/RealEstatePage/GetStartedSection/GetStartedSection";
+import RealEstatePageHero from "@/Components/RealEstatePage/RealEstatePageHero/RealEstatePageHero";
+import RealEstateService from "@/Components/RealEstatePage/RealEstateService/RealEstateService";
 import { RealEstateServiceConstants } from "@/Constants/RealEstateServicePage/RealEstatePageService";
 import Head from "next/head";
 import React from "react";
@@ -13,6 +16,9 @@ const Realestatewebsitedevelopment = () => {
         />
         <meta name="keywords" content={RealEstateServiceConstants.keywords} />
       </Head>
+      <RealEstatePageHero />
+      <RealEstateService />
+      <GetStartedSection/>
     </div>
   );
 };
