@@ -17,7 +17,7 @@ const BlogCard = ({ blog }) => {
 
     return (
         <div className='rounded-ss-[20px] max-w-[395px] bg-[#EEE] rounded-ee-[20px] overflow-hidden'>
-            <div className='w-full h-[220px] overflow-hidden'>
+            <div className='w-full  lg:h-[220px] overflow-hidden'>
             <Image width={395} height={252} className='w-full scale-100 hover:scale-110 transition-all duration-300' src={img} alt={alt} />
           </div>
 
