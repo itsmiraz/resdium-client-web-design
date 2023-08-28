@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="py-10 px-6 md:px-20 bg-[#284B63]">
-      <div className="grid grid-cols-5 gap-10">
+      <div className="grid grid-cols-6 gap-10">
         <div className="col-span-5 lg:col-span-2">
           <Image src={logo} alt="resdium-logo" className="md:w-40 w-32" />
           <h1 className="text-white pt-6 pb-2 font-medium text-sm">
@@ -22,7 +22,9 @@ const Footer = () => {
           </h1>
         </div>
         <div className=" col-span-2 lg:col-span-1">
-          <h1 className="text-white pt-6 pb-2 font-medium text-xl">Explore</h1>
+          <h1 className="text-white lg:pt-0 pt-6 pb-2 font-medium text-xl">
+            Explore
+          </h1>
           <ul className="text-[#E2E2E2] text-sm space-y-2">
             <li>
               <Link href={"/"}>
@@ -47,28 +49,43 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-span-2 lg:col-span-1">
-          <h1 className="text-white pt-6 pb-2 font-medium text-xl">Company</h1>
+          <h1 className="text-white lg:pt-0 pt-6 pb-2 font-medium text-xl">
+            Company
+          </h1>
           <ul className="text-[#E2E2E2] text-sm space-y-2">
             <li>
-          <Link href={'/blogs'}>    <p>Blogs</p></Link>
+              <Link href={"/blogs"}>
+                {" "}
+                <p>Blogs</p>
+              </Link>
             </li>
             <li>
-              <Link href={'/company/terms&conditions'}>
-                
-              <p>Terms & Conditions</p>
-            </Link>
+              <Link href={"/company/terms&conditions"}>
+                <p>Terms & Conditions</p>
+              </Link>
             </li>
             <li>
-              <Link href={'/company/privacyPolicy'}>
-              <p>Privacy Policy</p>
-                
-            </Link>
-
+              <Link href={"/company/privacyPolicy"}>
+                <p>Privacy Policy</p>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-span-2 lg:col-span-1">
+          <h1 className="text-white lg:pt-0 pt-6 pb-2 font-medium text-xl">
+            Other
+          </h1>
+          <ul className="text-[#E2E2E2] text-sm space-y-2">
+            <li>
+              <Link href={"/real-estate-website-development"}>
+                {" "}
+                <p>Real Estate Web Development</p>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="col-span-5 lg:col-span-1">
-          <h1 className="text-white pt-6 pb-2 font-medium text-xl">
+          <h1 className="text-white lg:pt-0 pt-6 pb-2 font-medium text-xl">
             Connect with Us
           </h1>
           <ul className="text-[#E2E2E2]  text-2xl flex gap-x-4">
