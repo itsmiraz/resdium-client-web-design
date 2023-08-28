@@ -60,7 +60,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/company/terms&conditions"}>
+              <Link href={"/company/termsAndconditions"}>
                 <p>Terms & Conditions</p>
               </Link>
             </li>
@@ -71,7 +71,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-2 lg:col-span-1">
+        <div className="col-span-4 lg:col-span-1">
           <h1 className="text-white lg:pt-0 pt-6 pb-2 font-medium text-xl">
             Other
           </h1>
