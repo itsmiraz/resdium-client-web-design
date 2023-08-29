@@ -39,6 +39,8 @@ const SingleBlog = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:image" content={img}></meta>
+        <meta property="og:title" content={title} />
         <meta name="description" content={meta_description} />
         <meta name="keywords" content={keywords} />
         <meta name="author" content="Resdium" />
