@@ -6,82 +6,82 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://resdium.vercel.app/</loc>
+  <loc>https://resdium.netlify.app/</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/service</loc>
+  <loc>https://resdium.netlify.app/service</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/aboutUs</loc>
+  <loc>https://resdium.netlify.app/aboutUs</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/contactUs</loc>
+  <loc>https://resdium.netlify.app/contactUs</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blogs</loc>
+  <loc>https://resdium.netlify.app/blogs</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/company/termsAndconditions</loc>
+  <loc>https://resdium.netlify.app/company/termsAndconditions</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/company/privacyPolicy</loc>
+  <loc>https://resdium.netlify.app/company/privacyPolicy</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/real-estate-website-development</loc>
+  <loc>https://resdium.netlify.app/real-estate-website-development</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/understanding-single-page-applications-and-their-importance/456783</loc>
+  <loc>https://resdium.netlify.app/blog/understanding-single-page-applications-and-their-importance/456783</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/the-impact-of-technology-on-the-arts-and-creativity/3422568</loc>
+  <loc>https://resdium.netlify.app/blog/the-impact-of-technology-on-the-arts-and-creativity/3422568</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/the-Future-of-AI-in-Digital-Marketing-Trends-to-Watch/12323</loc>
+  <loc>https://resdium.netlify.app/blog/the-Future-of-AI-in-Digital-Marketing-Trends-to-Watch/12323</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/the-impact-of-5g-on-digital-experiences-opportunities-and-challenges/123323</loc>
+  <loc>https://resdium.netlify.app/blog/the-impact-of-5g-on-digital-experiences-opportunities-and-challenges/123323</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/optimizingUserExperienceMobileFirstDesignPrinciples/234256</loc>
+  <loc>https://resdium.netlify.app/blog/optimizingUserExperienceMobileFirstDesignPrinciples/234256</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/the-quantum-internet-unleashing-the-power-of-quantum-entanglement/345367</loc>
+  <loc>https://resdium.netlify.app/blog/the-quantum-internet-unleashing-the-power-of-quantum-entanglement/345367</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/the-best-practices-for-seo-friendly-web-development/345368</loc>
+  <loc>https://resdium.netlify.app/blog/the-best-practices-for-seo-friendly-web-development/345368</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://resdium.vercel.app/blog/the-impact-of-technology-on-society/34567</loc>
+  <loc>https://resdium.netlify.app/blog/the-impact-of-technology-on-society/34567</loc>
   <lastmod>2023-08-30T10:36:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
