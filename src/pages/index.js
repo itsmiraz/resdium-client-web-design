@@ -25,6 +25,18 @@ export default function Home() {
           name="google-site-verification"
           content="01JMCDAiWgBjv7QWqWk2v2Tg-DbZo3SWxq3uYzIf9kc"
         />
+
+        <meta
+          property="og:title"
+          content="Resdium: Crafting Digital Experiences | Web Design & Development Agency"
+        />
+        <meta
+          property="og:description"
+          content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
+        />
+        <meta property="og:image" content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693065524/resdium-assets/hero_graphic_hjno7m.webp" />
+        <meta property="og:url" content="https://resdium.vercel.app/" />
+        <meta property="og:type" content="website" />
       </Head>
       <LandingHero />
       <BuildYourOnlineEmpire />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://resdium.vercel.app/404</loc>
     <lastmod>2023-08-28T03:53:10.011Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -54,7 +54,7 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
+
   <url>
     <loc>https://resdium.vercel.app/company/privacyPolicy</loc>
     <lastmod>2023-08-28T03:53:10.011Z</lastmod>
@@ -62,13 +62,10 @@
     <priority>1.0</priority>
   </url>
 
-  
   <url>
     <loc>https://resdium.vercel.app/company/termsAndconditions</loc>
     <lastmod>2023-08-28T03:53:10.011Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  
-  </urlset>
+</urlset>
