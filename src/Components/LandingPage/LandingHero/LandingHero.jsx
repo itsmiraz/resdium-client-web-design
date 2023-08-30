@@ -28,8 +28,8 @@ const LandingHero = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='md:max-w-fit max-w-[70%]'>
-                    <Image lazy='false' placeholder="blur" loading='eager' width={400} height={400} src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
+                <div className='md:w-fit w-[70%]'>
+                    <Image lazy='false'  loading='eager' width={400} height={400} src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
                 </div>
             </div>
         </MainContainer>

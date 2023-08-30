@@ -29,7 +29,7 @@ const BuildYourOnlineEmpire = () => {
                         }
                     </div>
                     <div className='md:w-fit w-[100%]'  >
-                        <Image width={508}   placeholder="blur" className='mx-auto' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
+                        <Image width={508}  className='mx-auto' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
                     </div>
                 </div>
             </div>
