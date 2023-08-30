@@ -44,7 +44,7 @@ const WhatRESDIUMPROVIDES = () => {
                         </div>
                     </div>
                     <div className='md:w-fit w-[100%]'  >
-                        <Image width={508} className='mx-auto md:rounded-ss-[30px] md:rounded-ee-[30px] rounded-ss-[20px] rounded-ee-[20px]' height={403} src={WhatRESDIUMPROVIDESConstants.img} alt={WhatRESDIUMPROVIDESConstants.alt} />
+                        <Image width={508}   placeholder="blur" className='mx-auto md:rounded-ss-[30px] md:rounded-ee-[30px] rounded-ss-[20px] rounded-ee-[20px]' height={403} src={WhatRESDIUMPROVIDESConstants.img} alt={WhatRESDIUMPROVIDESConstants.alt} />
                     </div>
                 </div>
             </div>
