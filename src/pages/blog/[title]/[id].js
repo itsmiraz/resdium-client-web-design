@@ -48,7 +48,7 @@ const SingleBlog = () => {
         <meta property="og:title" content={title} />
         <meta name="og:description" content={meta_description} />
         <meta name="keywords" content={keywords} />
-        <meta property="og:image" content={`${img}`}></meta>
+        <meta property="og:image" content={img}></meta>
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
         <meta name="author" content="Resdium" />

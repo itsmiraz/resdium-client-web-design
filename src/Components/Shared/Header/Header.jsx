@@ -37,6 +37,11 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
+                        <Link onClick={() => setOpen(!open)} href={'/blogs'}>
+                            <p className='cursor-pointer'>BLOGS</p>
+                        </Link>
+                    </li>
+                    <li>
                         <Link onClick={() => setOpen(!open)} href={'/contactUs'}>
                             <p className='cursor-pointer'>CONTACT</p>
                         </Link>
