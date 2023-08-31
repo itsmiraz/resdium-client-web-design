@@ -10,7 +10,7 @@ const Accordion = ({ title, content, i, length }) => {
 
 
     return (
-        <div className="mb-2 md:mb-10  select-none">
+        <div className="mb-6 md:mb-10  select-none">
             <button
                 className="w-full gap-x-6 text-left flex  justify-between items-center font-medium text-lg leading-[22px] text-[#3E3F46] md:text-[20px] lg:text-[22px]"
                 onClick={toggleAccordion}
@@ -35,7 +35,7 @@ const Accordion = ({ title, content, i, length }) => {
                 <div className="py-2 text-[16px] md:text-[18px] font-open-sans text-[#7E7E88] bg-white">{content}</div>
             </div>
 
-            <div className={` ${length - 1 === i ? "" : '"border-[#D9DBE9]  border-opacity-50 border-b-[1px]'} scale-105 pt-10`}>
+            <div className={` ${length - 1 === i ? "" : '"border-[#D9DBE9]  border-opacity-50 border-b-[1px]'} scale-105 pt-6 lg:pt-10`}>
 
             </div>
 
