@@ -10,12 +10,12 @@ import Link from 'next/link';
 const LandingHero = () => {
     return (
         <MainContainer>
-            <div className='flex md:flex-row flex-col-reverse justify-between items-center gap-10 md:gap-20'>
-                <div className='w-[100%] md:w-[60%] space-y-8 md:text-start text-center'>
-                    <h1 className='text-[40px] leading-[46px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 w-full   gap-10 md:gap-20'>
+                <div className='space-y-8 md:text-start text-center'>
+                    <h1 className='text-[40px] leading-[46px] md:text-[32px] md:leading-[36px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
                         {HeroConstants.title}
                     </h1>
-                    <p className='text-[#666] text-[16px] font-medium'>
+                    <p className='text-[#666] text-[16px] lg:leading-normal leading-normal md:leading-[20px] font-medium'>
                         <Balancer>
                             {
                                 HeroConstants.desc
@@ -28,8 +28,8 @@ const LandingHero = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='md:w-fit w-[70%]'>
-                    <Image lazy='false'  loading='eager' width={400} height={400} src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
+                <div className='flex justify-end md:order-last order-first md:w-full w-[70%] h-fit mx-auto'  >
+                    <Image lazy='false' loading='eager' width={420} height={440} className='' src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
                 </div>
             </div>
         </MainContainer>

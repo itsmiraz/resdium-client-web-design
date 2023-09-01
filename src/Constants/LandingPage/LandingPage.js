@@ -1,6 +1,6 @@
 const HeroConstants = {
   title: "EMPOWER YOUR DIGITAL PRESENCE",
-  desc: "Unleash the power of the web with Resdium`s comprehensive suite of digital services. From stunning web design to strategic SEO, we`re your partner in achieving online excellence.",
+  desc: "Unleash the power of the web with Resdium Digital's comprehensive suite of digital services. From stunning web design to strategic SEO, we`re your partner in achieving online excellence.",
   cta: "GET STARTED",
   ctaLink: "",
   heroimg:
@@ -10,7 +10,7 @@ const HeroConstants = {
 
 const BuildYourOnlineEmpireConstants = {
   title: "BUILD YOUR ONLINE EMPIRE WITH US",
-  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693064807/resdium-assets/build-your-brand-resdium_gxibjr.webp",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693486872/resdium-assets/build-your-brand-resdium_beos1o.webp",
   alt: "build-your-online-empire-with-resdium-img",
   steps: [
     {
@@ -41,7 +41,7 @@ const WhatRESDIUMPROVIDESConstants = {
   cta1Link: "",
   cta2: "READ MORE",
   cta2Link: "",
-  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693064940/resdium-assets/whatresdiumProvides_qsze4p.webp",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693486872/resdium-assets/whatresdiumProvides_wgrq2f.webp",
   alt: "what-resdium-provides-img",
 };
 
