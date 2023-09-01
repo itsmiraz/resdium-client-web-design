@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <Head>
         <title>
-          Resdium: Crafting Digital Experiences | Web Design & Development
+          Resdium Digital: Crafting Digital Experiences | Web Design & Development
           Agency
         </title>
         <meta
