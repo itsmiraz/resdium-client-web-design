@@ -19,10 +19,12 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="web design agency, web development services, digital experiences, creative web solutions, captivating websites, engaging user interfaces, website optimization, responsive design, conversion-focused websites, inspirational digital solutions, professional web designers, expert developers, user experience (UX) design, UI/UX optimization, online branding, digital transformation, innovative web solutions, custom web applications, modern website design, mobile-friendly websites, redium"
+          content="web design agency, web development services, digital experiences, creative web solutions, captivating websites, engaging user interfaces, website optimization, responsive design, conversion-focused websites, inspirational digital solutions, professional web designers, expert developers, user experience (UX) design, UI/UX optimization, online branding, digital transformation, innovative web solutions, custom web applications, modern website design, mobile-friendly websites, Resdium Digital"
         />
-        <meta name="google-site-verification" content="DRgXkUK42JTfoq_E3PUQhZOssMwL-eDz2AO05vQoU5M" />
-      
+        <meta
+          name="google-site-verification"
+          content="DRgXkUK42JTfoq_E3PUQhZOssMwL-eDz2AO05vQoU5M"
+        />
 
         <meta
           property="og:title"
@@ -32,7 +34,10 @@ export default function Home() {
           property="og:description"
           content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
         />
-        <meta property="og:image" content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693065524/resdium-assets/hero_graphic_hjno7m.webp" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693065524/resdium-assets/hero_graphic_hjno7m.webp"
+        />
         <meta property="og:url" content="https://resdium.vercel.app/" />
         <meta property="og:type" content="website" />
       </Head>
