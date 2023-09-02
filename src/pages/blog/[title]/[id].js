@@ -37,6 +37,7 @@ const SingleBlog = () => {
   return (
     <div>
       <Head>
+        <title>{title}| Resdium Blogs</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="article" />
@@ -45,13 +46,16 @@ const SingleBlog = () => {
           content={`${process.env.NEXT_PUBLIC_WEBSITE_URL_Live}${siteUrl}/${id} `}
         />
         <meta property="og:site_name" content="Resdium" />
-        <meta property="og:title" content={title} />
-        <meta name="og:description" content={meta_description} />
+        <meta property="og:title" content={`${title}| Resdium Blogs`} />
+        <meta name="description" content={meta_description} />
         <meta name="keywords" content={keywords} />
-        <meta name="image" content={img}></meta>
         <meta property="og:image" content={img}></meta>
+        <meta property="og:image:alt" content={alt}></meta>
+        <meta name="facebook:card" content="summary_large_image" />
+        <meta name="facebook:title" content={title} />
+        <meta name="facebook:description" content={meta_description} />
+        <meta name="facebook:image" content={img} />
         <meta name="author" content="Resdium" />
-        <title>{title}| Resdium Blogs</title>
       </Head>
 
       <section className="max-w-[900px] mx-auto py-4 lg:py-10 px-6">
