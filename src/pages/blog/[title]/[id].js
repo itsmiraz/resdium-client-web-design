@@ -43,13 +43,13 @@ const SingleBlog = () => {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={`${process.env.NEXT_PUBLIC_WEBSITE_URL_Live}${siteUrl}/${id} `}
+          content={`https://resdium.netlify.app/${siteUrl}/${id} `}
         />
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
         <meta name="description" content={meta_description} />
         <meta name="keywords" content={keywords} />
-        <meta property="og:image" content={img}></meta>
+        <meta property="og:image" content={img} />
         <meta property="og:image:alt" content={alt}></meta>
         <meta name="facebook:card" content="summary_large_image" />
         <meta name="facebook:title" content={title} />

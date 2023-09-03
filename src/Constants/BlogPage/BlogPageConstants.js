@@ -6,90 +6,153 @@ export const BlogHeroConstants = {
 };
 
 export const BlogsConstants = [
- 
   {
-    "id": 78901,
-    "date": "28/08/2023",
-    "postedBy": "Resdium Digital",
-    "title": "The Evolution of E-Commerce: Trends Shaping the Future of Online Retail",
-    "siteUrl": "evolution-of-e-commerce-trends-shaping-the-future-of-online-retail",
-    "img": "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693611873/blog-post-images/Evolution_of_E-commerce_gxksrw.webp",
-    "alt": "evolution-of-e-commerce-img",
-    "keywords": "e-commerce, online retail, digital trends, future of e-commerce, Resdium Digital, e-commerce apps",
-    "meta_description": "Explore the transformative trends shaping the future of e-commerce. Learn how Resdium Digital is at the forefront of e-commerce app development, empowering businesses to thrive in the evolving online retail landscape.",
-    "outline": "Discover the ever-changing landscape of e-commerce and the trends that are redefining online retail. Explore how Resdium Digital leads in e-commerce app development, helping businesses adapt to the dynamic world of online shopping.",
-    "content": [
+    id: 12345,
+    date: "29/08/2023",
+    postedBy: "Resdium",
+    title: "The Impact of Core Web Vitals on SEO",
+    siteUrl: "impact-of-core-web-vitals-on-seo",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693700114/blog-post-images/Googgle_Core_Vital_j746up.webp",
+    alt: "impact-of-core-web-vitals-on-seo-img",
+    keywords:
+      "Core Web Vitals, SEO, website performance, Google ranking, user experience, Resdium SEO solutions",
+    meta_description:
+      "Explore the significance of Core Web Vitals in SEO ranking. Learn how Resdium's SEO solutions can help improve website performance and boost search engine rankings.",
+    outline:
+      "Discover the crucial role that Core Web Vitals play in SEO. Understand how website performance impacts search engine rankings and how Resdium's SEO solutions can enhance your online presence.",
+    content: [
       {
-        "section": "Introduction to the Evolution of E-Commerce",
-        "content": "E-commerce has come a long way since its inception. The digital shopping landscape is constantly evolving, driven by changing consumer preferences and technological advancements. In this blog post, we explore the key trends shaping the future of online retail."
+        section: "Introduction to Core Web Vitals",
+        content:
+          "Core Web Vitals are a set of user-centric metrics introduced by Google to measure the loading performance, interactivity, and visual stability of a web page. They provide a clear picture of a website's user experience, which is a key factor in SEO.",
       },
       {
-        "section": "The Rise of Mobile Shopping",
-        "content": "Mobile shopping is no longer a trend; it's a way of life. With the proliferation of smartphones, consumers are increasingly making purchases on mobile devices. E-commerce businesses must prioritize mobile optimization and create seamless mobile shopping experiences."
+        section: "The Three Core Web Vitals Metrics",
+        content:
+          "1. **Largest Contentful Paint (LCP):** This metric measures how long it takes for the largest content element on a page to load. Ideally, it should occur within 2.5 seconds of when the page first starts loading.\n2. **First Input Delay (FID):** FID gauges interactivity and responsiveness. It measures the time it takes for a page to respond to a user's first interaction, such as clicking a button. A good FID score is less than 100 milliseconds.\n3. **Cumulative Layout Shift (CLS):** CLS assesses visual stability. It quantifies the unexpected layout shifts on a page. A CLS score of less than 0.1 is considered excellent.",
       },
       {
-        "section": "Personalization and AI-Driven Shopping",
-        "content": "Personalization powered by artificial intelligence (AI) is transforming the e-commerce landscape. AI analyzes customer data to offer personalized product recommendations, enhancing user experiences and boosting conversion rates."
+        section: "The SEO Impact of Core Web Vitals",
+        content:
+          "Google has incorporated Core Web Vitals as a ranking factor in its algorithm. Websites that offer a better user experience by meeting these metrics are rewarded with higher search engine rankings. In other words, if your website provides a faster, more responsive, and visually stable experience, it is more likely to appear at the top of search results.",
       },
       {
-        "section": "Sustainability and Ethical Shopping",
-        "content": "Consumers are becoming more conscious of sustainability and ethical practices. E-commerce businesses are responding by offering eco-friendly products, transparent supply chains, and responsible business practices."
+        section: "Improving Website Performance with Resdium",
+        content:
+          "At Resdium, we understand the importance of Core Web Vitals in SEO. Our SEO solutions focus on optimizing website performance to meet these crucial metrics. We employ techniques such as image optimization, code minification, and server optimizations to enhance loading times and interactivity. Additionally, we ensure that your website's layout remains stable for an improved user experience.",
       },
       {
-        "section": "The Omnichannel Experience",
-        "content": "Omnichannel retailing integrates online and offline channels to provide a seamless shopping experience. Customers can research products online, make purchases in-store, and vice versa. E-commerce businesses must embrace this trend to stay competitive."
+        section: "Conclusion",
+        content:
+          "Core Web Vitals have become a significant ranking factor, emphasizing the importance of user experience in SEO. By prioritizing these metrics and partnering with Resdium for SEO solutions, you can improve your website's performance, boost search engine rankings, and ultimately provide a better experience for your visitors.",
       },
-      {
-        "section": "Resdium Digital: Pioneering E-Commerce App Development",
-        "content": "At Resdium Digital, we understand the significance of e-commerce in today's retail landscape. Our expertise in e-commerce app development empowers businesses to adapt to these evolving trends and thrive in the digital retail space.\n\nWe specialize in creating custom e-commerce apps that deliver exceptional user experiences, drive sales, and position businesses for success in the dynamic world of online retail."
-      },
-      {
-        "section": "Conclusion",
-        "content": "The future of e-commerce is marked by innovation and adaptation. To succeed, businesses must embrace the trends that are shaping the industry. At Resdium Digital, we are committed to helping businesses navigate the ever-changing e-commerce landscape by providing cutting-edge e-commerce app solutions."
-      }
-    ]
+    ],
   },
-  
   {
-    "id": 67890,
-    "date": "01/09/2023",
-    "postedBy": "Resdium",
-    "title": "The Importance of Web Development: Building a Digital Presence with Resdium",
-    "siteUrl": "importance-of-web-development-building-a-digital-presence-with-resdium",
-    "img": "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693526138/blog-post-images/important_factors_of_web_development_f6gzqz.webp",
-    "alt": "importance-of-web-development-img",
-    "keywords": "web development, digital presence, online visibility, user experience, business growth, responsive design, Resdium web solutions",
-    "meta_description": "Discover the crucial aspects of web development and the impact it has on establishing a strong online presence. Learn how Resdium's web development solutions cover essential elements, from responsive design to user experience, to help your business thrive in the digital landscape.",
-    "outline": "Explore the significance of web development in establishing a robust online presence. Learn about the essential elements of web development, including responsive design, user experience, and online visibility. Discover how Resdium's web development solutions encompass these crucial aspects to propel your business forward.",
-    "content": [
+    id: 78901,
+    date: "28/08/2023",
+    postedBy: "Resdium Digital",
+    title:
+      "The Evolution of E-Commerce: Trends Shaping the Future of Online Retail",
+    siteUrl:
+      "evolution-of-e-commerce-trends-shaping-the-future-of-online-retail",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693611873/blog-post-images/Evolution_of_E-commerce_gxksrw.webp",
+    alt: "evolution-of-e-commerce-img",
+    keywords:
+      "e-commerce, online retail, digital trends, future of e-commerce, Resdium Digital, e-commerce apps",
+    meta_description:
+      "Explore the transformative trends shaping the future of e-commerce. Learn how Resdium Digital is at the forefront of e-commerce app development, empowering businesses to thrive in the evolving online retail landscape.",
+    outline:
+      "Discover the ever-changing landscape of e-commerce and the trends that are redefining online retail. Explore how Resdium Digital leads in e-commerce app development, helping businesses adapt to the dynamic world of online shopping.",
+    content: [
       {
-        "section": "Introduction to the Importance of Web Development",
-        "content": "Web development is the foundation of your digital presence. In an increasingly digital world, a well-designed and user-friendly website is no longer optional—it's a necessity for businesses of all sizes."
+        section: "Introduction to the Evolution of E-Commerce",
+        content:
+          "E-commerce has come a long way since its inception. The digital shopping landscape is constantly evolving, driven by changing consumer preferences and technological advancements. In this blog post, we explore the key trends shaping the future of online retail.",
       },
       {
-        "section": "Creating an Engaging User Experience",
-        "content": "User experience (UX) is at the heart of effective web development. A user-friendly, intuitive, and visually appealing website keeps visitors engaged and encourages longer stays. A positive UX fosters customer satisfaction and encourages return visits."
+        section: "The Rise of Mobile Shopping",
+        content:
+          "Mobile shopping is no longer a trend; it's a way of life. With the proliferation of smartphones, consumers are increasingly making purchases on mobile devices. E-commerce businesses must prioritize mobile optimization and create seamless mobile shopping experiences.",
       },
       {
-        "section": "Responsive Design for All Devices",
-        "content": "In today's multi-device landscape, responsive design is essential. A responsive website adjusts seamlessly to different screen sizes, providing a consistent experience on desktops, tablets, and smartphones. This not only enhances user experience but also boosts SEO rankings."
+        section: "Personalization and AI-Driven Shopping",
+        content:
+          "Personalization powered by artificial intelligence (AI) is transforming the e-commerce landscape. AI analyzes customer data to offer personalized product recommendations, enhancing user experiences and boosting conversion rates.",
       },
       {
-        "section": "Online Visibility and Business Growth",
-        "content": "A well-developed website increases online visibility, making it easier for potential customers to find your business. Search engine optimization (SEO) techniques, coupled with a user-focused design, drive organic traffic, generate leads, and contribute to business growth."
+        section: "Sustainability and Ethical Shopping",
+        content:
+          "Consumers are becoming more conscious of sustainability and ethical practices. E-commerce businesses are responding by offering eco-friendly products, transparent supply chains, and responsible business practices.",
       },
       {
-        "section": "Resdium: Building Your Digital Presence",
-        "content": "At Resdium, we recognize the importance of web development in establishing a strong digital presence. Our experienced team combines design expertise, technical skills, and industry insights to craft websites that align with your brand's vision and goals.\n\nFrom custom website development to e-commerce platforms, we cover the spectrum of web solutions to help your business thrive online."
+        section: "The Omnichannel Experience",
+        content:
+          "Omnichannel retailing integrates online and offline channels to provide a seamless shopping experience. Customers can research products online, make purchases in-store, and vice versa. E-commerce businesses must embrace this trend to stay competitive.",
       },
       {
-        "section": "Conclusion",
-        "content": "Web development plays a pivotal role in shaping your digital identity. By focusing on user experience, responsive design, and online visibility, you can create a compelling online presence that drives customer engagement and business success. At Resdium, we are dedicated to harnessing the power of web development to elevate your brand in the digital landscape."
-      }
-    ]
+        section: "Resdium Digital: Pioneering E-Commerce App Development",
+        content:
+          "At Resdium Digital, we understand the significance of e-commerce in today's retail landscape. Our expertise in e-commerce app development empowers businesses to adapt to these evolving trends and thrive in the digital retail space.\n\nWe specialize in creating custom e-commerce apps that deliver exceptional user experiences, drive sales, and position businesses for success in the dynamic world of online retail.",
+      },
+      {
+        section: "Conclusion",
+        content:
+          "The future of e-commerce is marked by innovation and adaptation. To succeed, businesses must embrace the trends that are shaping the industry. At Resdium Digital, we are committed to helping businesses navigate the ever-changing e-commerce landscape by providing cutting-edge e-commerce app solutions.",
+      },
+    ],
   },
-  
- 
+
+  {
+    id: 67890,
+    date: "01/09/2023",
+    postedBy: "Resdium",
+    title:
+      "The Importance of Web Development: Building a Digital Presence with Resdium",
+    siteUrl:
+      "importance-of-web-development-building-a-digital-presence-with-resdium",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693526138/blog-post-images/important_factors_of_web_development_f6gzqz.webp",
+    alt: "importance-of-web-development-img",
+    keywords:
+      "web development, digital presence, online visibility, user experience, business growth, responsive design, Resdium web solutions",
+    meta_description:
+      "Discover the crucial aspects of web development and the impact it has on establishing a strong online presence. Learn how Resdium's web development solutions cover essential elements, from responsive design to user experience, to help your business thrive in the digital landscape.",
+    outline:
+      "Explore the significance of web development in establishing a robust online presence. Learn about the essential elements of web development, including responsive design, user experience, and online visibility. Discover how Resdium's web development solutions encompass these crucial aspects to propel your business forward.",
+    content: [
+      {
+        section: "Introduction to the Importance of Web Development",
+        content:
+          "Web development is the foundation of your digital presence. In an increasingly digital world, a well-designed and user-friendly website is no longer optional—it's a necessity for businesses of all sizes.",
+      },
+      {
+        section: "Creating an Engaging User Experience",
+        content:
+          "User experience (UX) is at the heart of effective web development. A user-friendly, intuitive, and visually appealing website keeps visitors engaged and encourages longer stays. A positive UX fosters customer satisfaction and encourages return visits.",
+      },
+      {
+        section: "Responsive Design for All Devices",
+        content:
+          "In today's multi-device landscape, responsive design is essential. A responsive website adjusts seamlessly to different screen sizes, providing a consistent experience on desktops, tablets, and smartphones. This not only enhances user experience but also boosts SEO rankings.",
+      },
+      {
+        section: "Online Visibility and Business Growth",
+        content:
+          "A well-developed website increases online visibility, making it easier for potential customers to find your business. Search engine optimization (SEO) techniques, coupled with a user-focused design, drive organic traffic, generate leads, and contribute to business growth.",
+      },
+      {
+        section: "Resdium: Building Your Digital Presence",
+        content:
+          "At Resdium, we recognize the importance of web development in establishing a strong digital presence. Our experienced team combines design expertise, technical skills, and industry insights to craft websites that align with your brand's vision and goals.\n\nFrom custom website development to e-commerce platforms, we cover the spectrum of web solutions to help your business thrive online.",
+      },
+      {
+        section: "Conclusion",
+        content:
+          "Web development plays a pivotal role in shaping your digital identity. By focusing on user experience, responsive design, and online visibility, you can create a compelling online presence that drives customer engagement and business success. At Resdium, we are dedicated to harnessing the power of web development to elevate your brand in the digital landscape.",
+      },
+    ],
+  },
+
   {
     id: 56789,
     date: "26/08/2023",
