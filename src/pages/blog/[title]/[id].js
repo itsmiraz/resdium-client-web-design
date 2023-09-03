@@ -48,11 +48,14 @@ const SingleBlog = () => {
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
         <meta name="description" content={meta_description} />
+        <meta name="twitter:widgets:csp" content="on" />
+        <meta name="head:count" content="0" />
         <meta name="keywords" content={keywords} />
         <meta property="og:image" content={img} />
         <meta property="og:image:alt" content={alt}></meta>
         <meta property="og:image:width" content="1200" />{" "}
         <meta property="og:image:height" content="630" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={meta_description} />
