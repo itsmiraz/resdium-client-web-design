@@ -7,6 +7,58 @@ export const BlogHeroConstants = {
 
 export const BlogsConstants = [
   {
+    id: 23456,
+    date: "30/08/2023",
+    postedBy: "Resdium Digital",
+    title: "The Role of SEO in Online Reputation Management",
+    siteUrl: "role-of-seo-in-online-reputation-management",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1693800982/blog-post-images/Role_of_SEO_in_Online_Reputation_Management_akh1in.webp",
+    alt: "role-of-seo-in-online-reputation-management-img",
+    keywords:
+      "SEO, online reputation management, brand reputation, search engine rankings, Resdium reputation management",
+    meta_description:
+      "Discover how SEO plays a pivotal role in managing and enhancing your online reputation. Learn how Resdium's reputation management strategies leverage SEO to protect and build your brand's online image.",
+    outline:
+      "Explore the vital connection between SEO and online reputation management. Understand how SEO strategies can protect, repair, and strengthen your brand's online image with Resdium's reputation management expertise.",
+    content: [
+      {
+        section: "Introduction to Online Reputation Management",
+        content:
+          "Online reputation management (ORM) is the practice of monitoring, improving, and maintaining your brand's online image. In today's digital age, what people find when they search for your brand online can significantly impact your business.",
+      },
+      {
+        section: "The SEO-ORM Connection",
+        content:
+          "SEO and ORM are intertwined. When people search for your brand or related keywords, the search results can either bolster or harm your reputation. SEO strategies influence what appears in these results, making it a vital tool for ORM.",
+      },
+      {
+        section: "Protecting Your Brand's Reputation",
+        content:
+          "Proactive SEO measures can help protect your brand's reputation. By optimizing your website, creating quality content, and building authoritative backlinks, you can control what appears on the first page of search results. This reduces the likelihood of negative content gaining prominence.",
+      },
+      {
+        section: "Repairing Reputation Damage",
+        content:
+          "If your brand faces reputation issues, SEO can aid in the recovery process. Targeted SEO efforts can help push down negative content in search results, making it less visible. Additionally, creating positive, authoritative content can rebuild trust with your audience.",
+      },
+      {
+        section: "Strengthening Brand Image",
+        content:
+          "Consistent SEO practices that focus on content quality, user experience, and mobile optimization contribute to a positive online image. When your website is user-friendly and informative, it enhances your brand's credibility and trustworthiness.",
+      },
+      {
+        section: "Resdium's Expertise in Reputation Management",
+        content:
+          "At Resdium, we understand the critical role SEO plays in online reputation management. Our reputation management experts use advanced SEO strategies to protect, repair, and strengthen your brand's reputation. We monitor online mentions, create positive content, and optimize search results to ensure your brand's image remains strong.",
+      },
+      {
+        section: "Conclusion",
+        content:
+          "SEO is not just about search rankings; it's a powerful tool for shaping and managing your brand's online reputation. By combining SEO strategies with expert reputation management, you can ensure your brand maintains a positive image in the digital world.",
+      },
+    ],
+  },
+  {
     id: 12345,
     date: "29/08/2023",
     postedBy: "Resdium",
