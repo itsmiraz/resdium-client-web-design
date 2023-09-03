@@ -51,10 +51,16 @@ const SingleBlog = () => {
         <meta name="keywords" content={keywords} />
         <meta property="og:image" content={img} />
         <meta property="og:image:alt" content={alt}></meta>
-        <meta name="facebook:card" content="summary_large_image" />
-        <meta name="facebook:title" content={title} />
-        <meta name="facebook:description" content={meta_description} />
-        <meta name="facebook:image" content={img} />
+        <meta property="og:image:width" content="1200" />{" "}
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={meta_description} />
+        <meta name="twitter:image" content={img} />
+        <meta name="twitter:image:width" content="1200" />{" "}
+        <meta name="twitter:image:height" content="630" />
+        <meta name="twitter:site" content="@Resdium" />
+        <meta name="twitter:creator" content="@Resdium" />
         <meta name="author" content="Resdium" />
       </Head>
 
