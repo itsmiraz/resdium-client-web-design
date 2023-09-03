@@ -47,23 +47,35 @@ const SingleBlog = () => {
         />
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
-        <meta name="description" content={meta_description} />
-        <meta name="twitter:widgets:csp" content="on" />
-        <meta name="head:count" content="0" />
         <meta name="keywords" content={keywords} />
+        <meta name="description" content={meta_description} />
+        <meta name="head:count" content="0" />
+        <meta name="twitter:widgets:csp" content="on" />
         <meta property="og:image" content={img} />
         <meta property="og:image:alt" content={alt}></meta>
         <meta property="og:image:width" content="1200" />{" "}
         <meta property="og:image:height" content="630" />
         <meta name="robots" content="noindex, nofollow" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@resdium" />
+        <meta name="twitter:creator" content="@resdium" />
+        <meta name="twitter:image" content={img} />
+       
+        <meta
+          property="og:description"
+          content={meta_description}
+        />
+        <meta
+          property="og:image"
+          content={img}
+        />
+        {/* <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={meta_description} />
-        <meta name="twitter:image" content={img} />
         <meta name="twitter:image:width" content="1200" />{" "}
         <meta name="twitter:image:height" content="630" />
         <meta name="twitter:site" content="@Resdium" />
-        <meta name="twitter:creator" content="@Resdium" />
+        <meta name="twitter:creator" content="@Resdium" /> */}
         <meta name="author" content="Resdium" />
       </Head>
 
