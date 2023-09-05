@@ -12,7 +12,7 @@ export default async function handler(req, res) {
             // Add a timestamp to the form data before inserting it.
             bodyObject.createdAt = new Date();
 
-            let result = await GeneralFormCollection.insertMany(bodyObject);
+            let result = await GeneralFormCollection.insertOne(bodyObject);
             res.status(200).json(result);
         } catch (err) {
           return res
