@@ -6,11 +6,11 @@ import React from 'react';
 const BlogCard = ({ blog }) => {
 
     const {
+        _id,
         img,
         alt,
         title,
         outline,
-        id,
         siteUrl
     } = blog
 
@@ -27,7 +27,7 @@ const BlogCard = ({ blog }) => {
                     {outline.slice(0, 200)}..
                 </p>
                 <div className=''>
-                    <Link href={`/blog/${siteUrl}/${id}`}>
+                    <Link href={'/blog/[title]/[id]'} as={`/blog/${siteUrl}/${_id}`}>
                         <MAINBTN title={'Read More'} />
                     </Link>
                 </div>

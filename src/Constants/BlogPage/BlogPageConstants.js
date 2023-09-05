@@ -50,8 +50,6 @@ export const BlogsConstants = [
       }
     ]
   },
-  
-
   {
     id: 23456,
     date: "30/08/2023",
@@ -200,7 +198,7 @@ export const BlogsConstants = [
       },
     ],
   },
-
+// --
   {
     id: 67890,
     date: "01/09/2023",
@@ -380,6 +378,7 @@ export const BlogsConstants = [
       },
     ],
   },
+  // __
   {
     id: 12323,
     date: "22/08/2023",

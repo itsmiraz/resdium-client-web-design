@@ -1,27 +1,33 @@
-import { BlogsConstants } from "@/Constants/BlogPage/BlogPageConstants";
+import { BlogDetailsSkelton } from "@/Components/Skeletons/Sekeletons";
+import { fetchBlogDetails } from "@/lib/api";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React  from "react";
 import { Balancer } from "react-wrap-balancer";
 
-const SingleBlog = () => {
-  const router = useRouter();
+export async function getServerSideProps({ params }) {
+  // params contains the route parameters, including 'id'
+  const { id } = params;
+  const blogDetails = await fetchBlogDetails(id);
 
-  const { id } = router.query;
-  const [blogDetails, setBlogDetails] = useState({});
+  return {
+    props: {
+      blogDetails,
+    },
+  };
+}
 
-  useEffect(() => {
-    const blog = BlogsConstants.find(blog => parseInt(id) === blog?.id);
-    setBlogDetails(blog);
-  }, [id]);
+const SingleBlog = ({ blogDetails }) => {
+
+  
 
   if (!blogDetails?.title) {
-    return <p className="text-center p-10">Loading</p>;
+    return <BlogDetailsSkelton />;
   }
 
   const {
+    _id,
     title,
     keywords,
     meta_description,
@@ -43,7 +49,7 @@ const SingleBlog = () => {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={`https://resdium.netlify.app/${siteUrl}/${id} `}
+          content={`https://resdium.netlify.app/${siteUrl}/${_id} `}
         />
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
@@ -60,16 +66,8 @@ const SingleBlog = () => {
         <meta name="twitter:site" content="@resdium" />
         <meta name="twitter:creator" content="@resdium" />
         <meta name="twitter:image" content={img} />
-       
-        <meta
-          property="og:description"
-          content={meta_description}
-        />
-        <meta
-          property="og:image"
-          content={img}
-        />
-     
+        <meta property="og:description" content={meta_description} />
+        <meta property="og:image" content={img} />
         <meta name="author" content="Resdium" />
       </Head>
 
