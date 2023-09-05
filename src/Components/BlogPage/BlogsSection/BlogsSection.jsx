@@ -9,7 +9,7 @@ const BlogsSection = () => {
     const { data: blogs, isLoading } = useQuery({
         queryKey: ['blogs'],
         queryFn: async () => {
-            const res = await fetch('https://resdium.vercel.app/api/blogs/allblogs')
+            const res = await fetch('https://resdium.netlify.app/api/blogs/allblogs')
             const data = await res.json()
             return data
         }
