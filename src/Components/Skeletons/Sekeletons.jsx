@@ -28,7 +28,7 @@ export const BlogCardSekeleton = () => {
 export const BlogDetailsSkelton = () => {
     return (
         <div className="max-w-[900px] mx-auto py-4 lg:py-10 px-6">
-            <div className="max-w-[900px] max-h-[400px] overflow-hidden mx-auto rounded-ee-[40px] rounded-ss-[40px]  flex justify-center items-center bg-gray-300 animate-pulse">
+            <div className="max-w-[900px] h-[400px] overflow-hidden mx-auto rounded-ee-[40px] rounded-ss-[40px]  flex justify-center items-center bg-gray-300 animate-pulse">
 
             </div>
 

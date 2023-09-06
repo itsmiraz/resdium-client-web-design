@@ -21,18 +21,16 @@ const montserrat = Montserrat({
 
 
 const MainLayout = ({ children }) => {
-    const queryClient = new QueryClient()
 
 
     return (
         <div className={montserrat.className}>
-            <QueryClientProvider client={queryClient}>
-                <div className="relative  mx-auto max-w-[1520px] transition-all duration-300 ease-in-out">
-                    <Header />
-                    {children}
-                    <Footer />
-                </div>
-            </QueryClientProvider>
+
+            <div className="relative  mx-auto max-w-[1520px] transition-all duration-300 ease-in-out">
+                <Header />
+                {children}
+                <Footer />
+            </div>
             <Toaster />
         </div>
     );
