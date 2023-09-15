@@ -1,29 +1,24 @@
 import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
-import React from 'react'; 
+import React from 'react';
 import { Balancer } from 'react-wrap-balancer';
 
 const ServicePageHero = () => {
     return (
-        <section className='bg-[#325b5e]  md:rounded-ee-[80px] flex flex-col justify-center md:justify-center items-center lg:items-start w-full px-6 md:px-20 h-screen'>
-            <div className='lg:text-start text-center'>
-
-                <h1 className='text-[28px] lg:text-[48px] leading-[38px] lg:leading-[54px] uppercase font-bold text-white'>
-                    Exploring Our Web <br className='md:block hidden' />
-                    Development Services: <br className='md:block hidden' />
-                    Crafting Your Online Success
+        <section className=' flex lg:rounded-ss-[30px] lg:rounded-ee-[30px] items-center justify-center bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url(https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/service-page-hero-bg-resdium_dsxzpk.webp)' }}>
+            <div className='text-center p-4 py-10  lg:p-20 space-y-4'>
+                <h1 className='text-[26px] lg:text-[48px] leading-[28px] lg:leading-[52px] font-bold text-white'>
+                    Comprehensive Web <br className='lg:block hidden' />
+                    Development Services
                 </h1>
-                <p className='text-gray-200  text-sm lg:text-xl pt-6 pb-12'>
+                <p className='text-[10px] lg:text-xl text-gray-200'>
                     <Balancer>
-
-                        Dive into the heart of our web development prowess, where innovation
-                        meets functionality. Explore custom solutions, seamless user experiences,
-                        and transformative digital landscapes.
+                        Our team of experts offers a wide range of web development services tailored to <br className='lg:block hidden' /> your unique needs. Whether you need a stunning website, an e-commerce platform, <br className='lg:block hidden' /> or a web application, we have you covered.
                     </Balancer>
                 </p>
-                <MAINBTN title={'Get Started'} />
-
+                <MAINBTN title={"Get Started"}/>
             </div>
         </section>
+
     );
 };
 
