@@ -5,7 +5,7 @@ import { Balancer } from 'react-wrap-balancer';
 const ServicePageHero = () => {
     return (
         <section className=' flex lg:rounded-ss-[30px] lg:rounded-ee-[30px] items-center justify-center bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url(https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/service-page-hero-bg-resdium_dsxzpk.webp)' }}>
-            <div className='text-center p-4 py-10  lg:p-20 space-y-4'>
+            <div className='text-center px-4 py-20 lg:py-40  lg:px-20 space-y-4'>
                 <h1 className='text-[26px] lg:text-[48px] leading-[28px] lg:leading-[52px] font-bold text-white'>
                     Comprehensive Web <br className='lg:block hidden' />
                     Development Services
