@@ -11,20 +11,35 @@ const Service = () => {
     <section>
       <Head>
         <title>
-          Expert Web Development Services by Resdium - Transforming Your Digital
-          Landscape
+          Professional Web Development Services by Resdium Digital- Transforming
+          Your Digital Landscape
         </title>
         <meta
           name="description"
           content="Elevate your online presence with Resdium's professional web development services. Our custom solutions deliver seamless user experiences and innovative digital transformations for lasting impact."
         />
+        <meta
+          property="og:title"
+          content="Professional Web Development Services by Resdium Digital- Transforming Your Digital
+          Landscape"
+        />
+        <meta
+          property="og:description"
+          content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693558278/resdium-assets/Residum_p4cu5m.png"
+        />
+        <meta property="og:url" content="https://resdium.netlify.app/" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <ServicePageHero />
       <OtherSection />
-      <ServicePricing/>
+      <ServicePricing />
       <ServiceWhatWeOffer />
-      <ServiceProcces/>
+      <ServiceProcces />
     </section>
   );
 };
