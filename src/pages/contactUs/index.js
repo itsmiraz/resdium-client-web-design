@@ -13,8 +13,8 @@ import { Balancer } from "react-wrap-balancer";
 
 const ContactUs = () => {
   const [Service, setService] = useState("");
+  const [Package, setPackage] = useState("");
 const [loading, setloading] = useState(false);
-const [animation, setanimation] = useState(false);
 
   const handleForm = e => {
     e.preventDefault();
@@ -32,6 +32,7 @@ const [animation, setanimation] = useState(false);
       linkedin,
       companyName,
       Service,
+      Package,
       message,
     };
     setloading(true)
@@ -159,7 +160,7 @@ const [animation, setanimation] = useState(false);
                 type="text"
                 name="name"
                 required
-                className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
 
@@ -172,7 +173,7 @@ const [animation, setanimation] = useState(false);
                 type="email"
                 name="email"
                 required
-                className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
             {/* Linkedin */}
@@ -184,7 +185,7 @@ const [animation, setanimation] = useState(false);
                 required
                 type="text"
                 name="linkedin"
-                className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
 
@@ -194,10 +195,10 @@ const [animation, setanimation] = useState(false);
                 Select the type of website you want
               </label>
               <select
-                value={Service}
+                value={Package}
                 required
-                onChange={e => setService(e.target.value)}
-                className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                onChange={e => setPackage(e.target.value)}
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
                 name=""
                 id=""
               >
@@ -217,6 +218,31 @@ const [animation, setanimation] = useState(false);
                 <option value="Other">Other</option>
               </select>
             </div>
+            {/* Type */}
+            <div>
+              <label htmlFor="" className="block text-sm font-medium py-2 ">
+              Choose Your Package
+              </label>
+              <select
+                value={Service}
+                required
+                onChange={e => setService(e.target.value)}
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                name=""
+                id=""
+              >
+                <option disabled value="">
+                  Choose an Option
+                </option>
+                <option value="Bronze">
+                Bronze
+                </option>
+                <option value="Silver">Silver</option>
+                <option value="Premium">Premium</option>
+                <option value="Custom">Custom (Recommended)</option>
+             
+              </select>
+            </div>
 
             {/* Company Name */}
             <div>
@@ -227,7 +253,7 @@ const [animation, setanimation] = useState(false);
                 type="text"
                 required
                 name="company"
-                className="w-full bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
 
@@ -240,7 +266,7 @@ const [animation, setanimation] = useState(false);
                 type=""
                 required
                 name="message"
-                className="w-full h-32 bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+                className="w-full focus:outline-[#2e688f] h-32 bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
             <button className="teal-green-to-deep-blue-gradient w-full  text-white  px-4 py-3 font-medium  rounded-corners-sm">

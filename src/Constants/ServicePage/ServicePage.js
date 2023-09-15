@@ -53,6 +53,7 @@ export const servicePagePackage = {
       " Mobile Responsiveness",
       "Xml Sitemap",
       "Contact Forum",
+      "Dedicated Server",
       "Social Media Integration",
       "1 hour brainstorming",
       "Up to 5 custom Features",

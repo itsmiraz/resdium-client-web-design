@@ -1,4 +1,5 @@
 import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
+import Link from 'next/link';
 import React from 'react';
 import { Balancer } from 'react-wrap-balancer';
 
@@ -15,7 +16,11 @@ const ServicePageHero = () => {
                         Our team of experts offers a wide range of web development services tailored to <br className='lg:block hidden' /> your unique needs. Whether you need a stunning website, an e-commerce platform, <br className='lg:block hidden' /> or a web application, we have you covered.
                     </Balancer>
                 </p>
-                <MAINBTN title={"Get Started"}/>
+                <div>
+                    <Link href={'/contactUs'}>
+                        <MAINBTN title={"Get Started"} />
+                    </Link>
+              </div>
             </div>
         </section>
 
