@@ -1,4 +1,6 @@
 import ServicePageHero from "@/Components/ServicePage/ServicePageHero/ServicePageHero";
+import OtherSection from "@/Components/ServicePage/ServicePageOtherSection/OtherSection";
+import ServicePricing from "@/Components/ServicePage/ServicePricing/ServicePricing";
 import ServiceProcces from "@/Components/ServicePage/ServiceProcces/ServiceProcces";
 import ServiceWhatWeOffer from "@/Components/ServicePage/ServiceWhatWeOffer/ServiceWhatWeOffer";
 import Head from "next/head";
@@ -19,6 +21,8 @@ const Service = () => {
       </Head>
 
       <ServicePageHero />
+      <OtherSection />
+      <ServicePricing/>
       <ServiceWhatWeOffer />
       <ServiceProcces/>
     </section>
