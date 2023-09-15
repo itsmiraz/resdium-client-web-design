@@ -29,7 +29,7 @@ const ServicePricing = () => {
                     </ul>
                 </div>
                 <div className='flex flex-wrap items-center  pl-4 text-start justify-between lg:justify-around'>
-                    <div className=' flex md:flex-col  flex-wrap items-center w-full lg:w-fit justify-between '>
+                    <div className=' flex md:flex-col  flex-wrap items-center gap-4 w-fit justify-between '>
                         <div>
                         <h2 className='font-semibold'>Starts With</h2>
                         <h1 className='text-[40px] font-semibold'>{data.startsWiht}</h1>
