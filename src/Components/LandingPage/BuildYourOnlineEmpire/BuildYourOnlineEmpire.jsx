@@ -7,7 +7,7 @@ import { Balancer } from 'react-wrap-balancer';
 
 const BuildYourOnlineEmpire = () => {
     return (
-        <div className='bg-[#284B63] h-fit lg:h-screen flex flex-col justify-center items-center my-20 w-full  lg:rounded-ss-[60px] lg:rounded-ee-[60px] py-20 px-6 lg:px-20'>
+        <div className='bg-[#284B63] h-fit  flex flex-col justify-center items-center my-20 w-full  lg:rounded-ss-[60px] lg:rounded-ee-[60px] py-20 px-6 lg:px-20'>
             <div>
                 <h1 className='text-[24px] lg:text-[32px] font-bold text-center text-white'>
                     {BuildYourOnlineEmpireConstants.title}
