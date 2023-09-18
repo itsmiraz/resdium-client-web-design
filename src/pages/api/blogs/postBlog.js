@@ -5,13 +5,13 @@ export default async function handler(req, res) {
     const client = await connectToDatabase();
     const db = client.db("resdium");
     const GeneralFormCollection = db.collection("blogs");
+    
     switch (req.method) {
       case "POST":
         try {
             let bodyObject = req.body;
             // Add a timestamp to the form data before inserting it.
             bodyObject.createdAt = new Date();
-
             let result = await GeneralFormCollection.insertOne(bodyObject);
             res.status(200).json(result);
         } catch (err) {
@@ -26,6 +26,7 @@ export default async function handler(req, res) {
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
   } catch (err) {
+    console.log(err);
     res
       .status(500)
       .send("Something went wrong during server-side processing 2");
