@@ -33,7 +33,7 @@ const ServiceWhatWeOffer = () => {
 
             <div
                 ref={sectionRef}
-                className='space-y-20 pt-32 max-w-[1000px] mx-auto'>
+                className='space-y-20 pt-32 overflow-hidden max-w-[1000px] mx-auto'>
                 {
                     ServicewhatWeOfferConstants.map((data, i) => <div className='grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-24 place-items-center' key={i}>
                         <motion.div
@@ -52,7 +52,7 @@ const ServiceWhatWeOffer = () => {
                             exit='exit'
                             variants={slideAnimation('right')}
                             className={`${data.left ? "order-first md:order-first justify-start" : "order-first md:order-last  justify-end"} w-full flex `}>
-                            <Image className='rounded-ss-[40px] rounded-ee-[40px]' width={450} height={266} src={data.img} alt={data.alt} />
+                            <Image className='lg:rounded-ss-[40px] rounded-ss-[20px] lg:rounded-ee-[40px] rounded-ee-[20px]' width={450} height={266} src={data.img} alt={data.alt} />
                         </motion.div>
 
 
