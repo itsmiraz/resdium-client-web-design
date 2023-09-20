@@ -35,10 +35,10 @@ const LandingHero = () => {
                     exit='exit'
                     variants={slideAnimation('left')}
                     className='space-y-8 md:text-start text-center'>
-                    <h1 className='text-[40px] leading-[46px] md:text-[32px] md:leading-[36px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
+                    <h1 className='text-[40px] leading-[42px] md:text-[32px] md:leading-[36px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
                         {HeroConstants.title}
                     </h1>
-                    <p className='text-[#666] text-[16px] lg:leading-normal leading-normal md:leading-[20px] font-medium'>
+                    <p className='text-[#666] text-[15px]  lg:leading-normal leading-[17px] md:leading-[20px] font-medium'>
                         <Balancer>
                             {
                                 HeroConstants.desc
@@ -56,8 +56,8 @@ const LandingHero = () => {
                      animate={animate ? 'animate':'initial'}
                     exit='exit'
                     variants={slideAnimation('right')}
-                    className='flex justify-end md:order-last order-first md:w-full w-[70%] h-fit mx-auto'  >
-                    <Image lazy='false' loading='eager' width={420} height={440} className='' src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
+                    className='flex justify-end md:order-last order-first md:w-full w-[65%] h-fit mx-auto'  >
+                    <Image lazy='false'  loading='eager' width={420} height={440} className='' src={HeroConstants.heroimg} alt={HeroConstants.heroImgAlt} />
                 </motion.div>
             </div>
 

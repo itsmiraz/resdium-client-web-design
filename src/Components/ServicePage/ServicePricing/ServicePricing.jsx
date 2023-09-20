@@ -29,17 +29,17 @@ const ServicePricing = () => {
                     </ul>
                 </div>
                 <div className='flex flex-wrap items-center  pl-4 text-start justify-between lg:justify-around'>
-                    <div className=' flex md:flex-col  flex-wrap items-center gap-4 w-fit justify-between '>
+                    <div className=' flex md:flex-col  flex-wrap items-center gap-4 w-full md:w-fit justify-between '>
                         <div>
-                        <h2 className='font-semibold'>Starts With</h2>
-                        <h1 className='text-[40px] font-semibold'>{data.startsWiht}</h1>
+                        <h2 className='font-semibold text-sm'>Starts With</h2>
+                        <h1 className='text-[32px] lg:text-[40px] font-semibold'>{data.startsWiht}</h1>
                  
                       </div>
                         
                 {
                     data.additionalPage && 
                     <div className='text-start pt-4'>
-                    <Link href={'/contactUs'}> <button className='bg-white rounded-ss-[6px] rounded-ee-[6px] text-gray-800 font-semibold px-4 py-2'>Book Now </button></Link>
+                    <Link href={'/contactUs'}> <button className='bg-white rounded-ss-[6px]  text-sm  rounded-ee-[6px] text-gray-800 font-semibold px-4 py-2'>Get Started </button></Link>
 
                     </div>
 }
@@ -64,7 +64,7 @@ const ServicePricing = () => {
                         :
                         <>
                             <div className='text-start '>
-                            <Link href={'/contactUs'}> <button className='bg-white rounded-ss-[6px] rounded-ee-[6px] text-gray-800 font-semibold px-4 py-2'>Book Now </button></Link>
+                            <Link href={'/contactUs'}> <button className='bg-white text-sm  rounded-ss-[6px] rounded-ee-[6px] text-gray-800 font-semibold px-4 py-2'>Get Started </button></Link>
 
                             </div>
                         </>

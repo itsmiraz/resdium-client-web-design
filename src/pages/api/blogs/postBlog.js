@@ -26,7 +26,6 @@ export default async function handler(req, res) {
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
   } catch (err) {
-    console.log(err);
     res
       .status(500)
       .send("Something went wrong during server-side processing 2");
