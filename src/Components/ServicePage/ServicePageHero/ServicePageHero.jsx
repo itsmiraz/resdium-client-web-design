@@ -24,7 +24,7 @@ const ServicePageHero = () => {
     }, [inView]);
 
     return (
-        <section ref={sectionRef} className=' flex lg:rounded-ss-[30px] lg:rounded-ee-[30px] items-center justify-center bg-cover bg-no-repeat bg-center h-screen' style={{ backgroundImage: 'url(https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/service-page-hero-bg-resdium_dsxzpk.webp)' }}>
+        <section ref={sectionRef} className=' flex lg:rounded-ss-[30px] lg:rounded-ee-[30px] items-center justify-center bg-cover bg-no-repeat bg-center h-full lg:h-screen' style={{ backgroundImage: 'url(https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/service-page-hero-bg-resdium_dsxzpk.webp)' }}>
             <motion.div
                 initial='initial'
                 animate={animate ? 'animate' : 'initial'}

@@ -25,7 +25,7 @@ const OtherSection = () => {
     }, [inView]);
 
     return (
-        <section  ref={sectionRef} className='px-6 lg:px-40 py-10 lg:py-20'>
+        <section  ref={sectionRef} className='px-6 lg:px-40 py-10 lg:py-20 overflow-hidden'>
             <div>
                 {
                     ServicePageSections.map((data, i) => <div className='grid grid-cols-1 place-items-center w-full  md:grid-cols-2 my-20 gap-8 lg:gap-20' key={i}>
