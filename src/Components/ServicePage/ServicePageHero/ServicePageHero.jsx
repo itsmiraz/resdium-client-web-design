@@ -1,12 +1,36 @@
 import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Balancer } from 'react-wrap-balancer';
+import { motion, } from 'framer-motion'
+
+import { useInView } from 'react-intersection-observer';
+import { slideAnimation } from '@/lib/motion';
 
 const ServicePageHero = () => {
+
+    const [sectionRef, inView] = useInView({
+        triggerOnce: true, // Trigger animation once when it enters the viewport
+        threshold: 0.2, // Adjust this threshold as needed
+    });
+
+    // State to control whether animations should play
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            setAnimate(true);
+        }
+    }, [inView]);
+
     return (
-        <section className=' flex lg:rounded-ss-[30px] lg:rounded-ee-[30px] items-center justify-center bg-cover bg-no-repeat bg-center' style={{ backgroundImage: 'url(https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/service-page-hero-bg-resdium_dsxzpk.webp)' }}>
-            <div className='text-center px-4 py-20 lg:py-40  lg:px-20 space-y-4'>
+        <section ref={sectionRef} className=' flex lg:rounded-ss-[30px] lg:rounded-ee-[30px] items-center justify-center bg-cover bg-no-repeat bg-center h-screen' style={{ backgroundImage: 'url(https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/service-page-hero-bg-resdium_dsxzpk.webp)' }}>
+            <motion.div
+                initial='initial'
+                animate={animate ? 'animate' : 'initial'}
+                exit='exit'
+                variants={slideAnimation('up')}
+                className='text-center px-4 py-20 lg:py-40  lg:px-20 space-y-4'>
                 <h1 className='text-[26px] lg:text-[48px] leading-[28px] lg:leading-[52px] font-bold text-white'>
                     Comprehensive Web <br className='lg:block hidden' />
                     Development Services
@@ -20,8 +44,8 @@ const ServicePageHero = () => {
                     <Link href={'/contactUs'}>
                         <MAINBTN title={"Get Started"} />
                     </Link>
-              </div>
-            </div>
+                </div>
+            </motion.div>
         </section>
 
     );
