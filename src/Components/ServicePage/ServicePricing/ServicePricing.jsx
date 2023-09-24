@@ -1,27 +1,13 @@
 import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
 import { servicePagePackage } from '@/Constants/ServicePage/ServicePage';
-import getUserGeolocation from '@/lib/geolocation';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import Balancer from 'react-wrap-balancer';
 
 const ServicePricing = () => {
 
 
-    const [userLocation, setUserLocation] = useState({});
-
-    useEffect(() => {
-        async function fetchGeolocation() {
-            const geolocation = await getUserGeolocation();
-            setUserLocation(geolocation);
-        }
-        fetchGeolocation();
-    }, []);
-    console.log(userLocation);
-    // Function to determine if the user is in India based on the geolocation data
-    const isUserinBd = () => {
-        return userLocation && userLocation.country === "BD";
-    };
+  
 
 
 
@@ -94,8 +80,7 @@ const ServicePricing = () => {
     }
 
     return (
-        <div>
-            {!isUserinBd && <section className='px-6 lg:px-20 py-20'>
+           <section className='px-6 lg:px-20 py-20'>
                 <div className='text-center'>
                     <h1 className='text-[#22323F] text-[26px] lg:text-[48px] leading-[28px] lg:leading-[52px]  font-bold'>
 
@@ -135,8 +120,7 @@ const ServicePricing = () => {
                     </div>
 
                 </div>
-            </section>}
-        </div>
+            </section>
 
     );
 };
