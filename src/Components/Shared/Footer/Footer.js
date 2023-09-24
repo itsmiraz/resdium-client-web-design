@@ -18,7 +18,7 @@ const Footer = () => {
             Resdium Digital Ltd.
           </h1>
           <h1 className="text-white  font-medium text-xs">
-            Email: miraj.resdium@gmail.com
+            Email: miraj@resdium.live
           </h1>
         </div>
         <div className=" col-span-2 lg:col-span-1">

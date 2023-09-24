@@ -140,7 +140,7 @@ const [loading, setloading] = useState(false);
             </p>
             <div className="flex font-semibold text-[#414141] items-center gap-2">
               <AiOutlineMail />
-              <p>contact.resdium@gmail.com</p>
+              <p>miraj@resdium.live</p>
             </div>
           </div>
         </div>
