@@ -7,29 +7,35 @@ import { useRouter } from 'next/router';
 const BlogsSection = () => {
 
     const router = useRouter();
-   
-  const { data: blogs, isInitialLoading, isError, isLoading } = useQuery({
-    queryKey: ['blogs'],
-    queryFn: async () => {
-      try {
-        // Get the current domain from the router
-        const currentDomain = `${window.location.protocol}//${window.location.host}`;
 
-        // Construct the API URL using the current domain
-        const apiURL = `${currentDomain}/api/blogs/allblogs`;
+    // Get the current page and perPage from the query parameters
+    const { query } = router;
+    const [totalBlogs, setTotalBlogs] = useState(0);
+    const currentPage = query.page ? parseInt(query.page) : 1;
+    const perPage = 9; // Number of items per page
 
-        const res = await fetch(apiURL);
-        const data = await res.json();
-        return data;
-      } catch (error) {
-        throw error;
-      }
-    },
-    initialData: [], // Provide an empty array as initial data
-  });
+    const { data: blogs, isInitialLoading, isError, isLoading } = useQuery({
+        queryKey: ['blogs', currentPage, perPage],
+        queryFn: async () => {
+            try {
+                // Fetch data from the API using the current page and perPage values
+                const res = await fetch(`/api/blogs/allblogs?page=${currentPage}&perPage=${perPage}`);
+                const data = await res.json();
+                setTotalBlogs(data.totalBlogs); // Set totalBlogs from the API response
+                return data.blogs;
+            } catch (error) {
+                throw error;
+            }
+        },
+
+    });
 
 
-
+    // Function to handle pagination clicks
+    const handlePageChange = (newPage) => {
+        // Update the page query parameter in the URL
+        router.push(`/blogs?page=${newPage}`);
+    };
 
     return (
         <div className='py-10 lg:py-20 px-6 lg:px-20'>
@@ -65,6 +71,23 @@ const BlogsSection = () => {
                                         {
                                             blogs?.map((data, i) => <BlogCard key={i} blog={data} />)
                                         }
+                                    </div>
+                                    <div className="flex justify-center my-4">
+                                        {/* Pagination controls */}
+                                        <button
+                                            onClick={() => handlePageChange(currentPage - 1)}
+                                            disabled={currentPage === 1}
+                                            className="px-4 disabled:text-gray-400 disabled:cursor-not-allowed py-2 mx-2 bg-gray-300"
+                                        >
+                                            Previous
+                                        </button>
+                                        <button
+                                            onClick={() => handlePageChange(currentPage + 1)}
+                                            disabled={(currentPage * perPage) >= totalBlogs}
+                                            className="px-4 py-2 disabled:text-gray-400  disabled:bg-gray-200 mx-2 bg-gray-300"
+                                        >
+                                            Next
+                                        </button>
                                     </div>
                                 </>
                             }

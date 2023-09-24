@@ -28,7 +28,7 @@ const LandingHero = () => {
     return (
         <MainContainer>
 
-            <div ref={sectionRef} className='grid grid-cols-1 md:grid-cols-2 w-full  overflow-hidden  gap-10 md:gap-20'>
+            <div ref={sectionRef} className='grid grid-cols-1 md:grid-cols-2 w-full  overflow-hidden py-14 lg:py-0 gap-10 md:gap-20'>
                 <motion.div
                     initial='initial'
                     animate={animate ? 'animate':'initial'}
@@ -36,7 +36,9 @@ const LandingHero = () => {
                     variants={slideAnimation('left')}
                     className='space-y-6 lg:space-y-8 md:text-start text-center'>
                     <h1 className='text-[32px] leading-[34px] md:text-[32px] md:leading-[36px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
+                        <Balancer>
                         {HeroConstants.title}
+                       </Balancer>
                     </h1>
                     <p className='text-[#666] text-[15px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium'>
                         <Balancer>
