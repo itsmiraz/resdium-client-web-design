@@ -19,7 +19,7 @@ export const PrivacyPolicyConstants = {
       },
       {
         "section": "Your Choices and Rights",
-        "content": "You have the right to access, update, or delete your personal information. You can also opt-out of receiving marketing communications from us. To exercise these rights, please contact us at miraj.resdium@gmail.com."
+        "content": "You have the right to access, update, or delete your personal information. You can also opt-out of receiving marketing communications from us. To exercise these rights, please contact us at miraj@resdium.live."
       },
       {
         "section": "Changes to this Privacy Policy",
@@ -27,7 +27,7 @@ export const PrivacyPolicyConstants = {
       },
       {
         "section": "Contact Us",
-        "content": "For any questions, concerns, or requests regarding your privacy and personal information, please contact us at miraj.resdium@gmail.com ."
+        "content": "For any questions, concerns, or requests regarding your privacy and personal information, please contact us at miraj@resdium.live ."
       },
       
     ]

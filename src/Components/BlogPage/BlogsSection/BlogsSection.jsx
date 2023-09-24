@@ -2,28 +2,34 @@ import React, { useState } from 'react';
 import BlogCard from '../BlogCard/BlogCard';
 import { useQuery } from '@tanstack/react-query';
 import { BlogCardSekeleton } from '@/Components/Skeletons/Sekeletons';
+import { useRouter } from 'next/router';
 
 const BlogsSection = () => {
 
+    const router = useRouter();
+   
+  const { data: blogs, isInitialLoading, isError, isLoading } = useQuery({
+    queryKey: ['blogs'],
+    queryFn: async () => {
+      try {
+        // Get the current domain from the router
+        const currentDomain = `${window.location.protocol}//${window.location.host}`;
+
+        // Construct the API URL using the current domain
+        const apiURL = `${currentDomain}/api/blogs/allblogs`;
+
+        const res = await fetch(apiURL);
+        const data = await res.json();
+        return data;
+      } catch (error) {
+        throw error;
+      }
+    },
+    initialData: [], // Provide an empty array as initial data
+  });
 
 
-    const { data: blogs, isInitialLoading, isError, isLoading } = useQuery({
-        queryKey: ['blogs'],
-        queryFn: async () => {
-            try {
-                const res = await fetch('https://resdium.netlify.app/api/blogs/allblogs');
-                const data = await res.json();
-                return data;
-            } catch (error) {
-                throw error;
-            }
-        },
-        initialData: [], // Provide an empty array as initial data
-    });
 
-
-
-    console.log(blogs);
 
     return (
         <div className='py-10 lg:py-20 px-6 lg:px-20'>

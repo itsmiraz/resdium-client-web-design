@@ -34,11 +34,11 @@ const LandingHero = () => {
                     animate={animate ? 'animate':'initial'}
                     exit='exit'
                     variants={slideAnimation('left')}
-                    className='space-y-8 md:text-start text-center'>
-                    <h1 className='text-[40px] leading-[42px] md:text-[32px] md:leading-[36px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
+                    className='space-y-6 lg:space-y-8 md:text-start text-center'>
+                    <h1 className='text-[32px] leading-[34px] md:text-[32px] md:leading-[36px] lg:text-[64px] font-bold lg:leading-[72px]  bg-clip-text text-transparent bg-gradient-to-r from-[#3C6E71] to-[#01437C]'>
                         {HeroConstants.title}
                     </h1>
-                    <p className='text-[#666] text-[15px]  lg:leading-normal leading-[17px] md:leading-[20px] font-medium'>
+                    <p className='text-[#666] text-[15px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium'>
                         <Balancer>
                             {
                                 HeroConstants.desc
