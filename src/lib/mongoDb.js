@@ -1,27 +1,16 @@
-// lib/mongodb.js
-import { MongoClient } from 'mongodb';
-import dotenv from 'dotenv';
+const { MongoClient } = require('mongodb');
 
-dotenv.config();
+const uri = process.env.NEXT_PUBLIC_MONGO_URI;
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-export async function connectToDatabase() {
-  const { NEXT_PUBLIC_MONGO_URI } = process.env;
-
-  if (!NEXT_PUBLIC_MONGO_URI) {
-    throw new Error('NEXT_PUBLIC_MONGO_URI environment variable not set.');
+async function connectToDatabase() {
+  try {
+    await client.connect();
+    return client;
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+    throw error;
   }
-
-  let cachedClient = null;
-
-  if (cachedClient && cachedClient.isConnected()) {
-    return cachedClient;
-  }
-
-  const client = await MongoClient.connect(NEXT_PUBLIC_MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-
-  cachedClient = client;
-  return client;
 }
+
+export { connectToDatabase };
