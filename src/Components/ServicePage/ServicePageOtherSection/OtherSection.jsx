@@ -45,7 +45,7 @@ const OtherSection = () => {
                             </p>
                             <div>
                                 <Link href={'/contactUs'}>
-                                    <MAINBTN title={'Shedule a Call Today'} />
+                                    <MAINBTN title={'Schedule a Call Today'} />
                                 </Link>
                             </div>
                         </motion.div>
