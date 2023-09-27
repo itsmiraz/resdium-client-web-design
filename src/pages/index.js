@@ -38,7 +38,8 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693558278/resdium-assets/Residum_p4cu5m.png"
         />
-        <meta property="og:url" content="https://resdium.netlify.app/" />
+        <meta property="og:url" content="https://www.resdium.live/" />
+        <link rel="canonical" href="https://www.resdium.live/" />
         <meta property="og:type" content="website" />
       </Head>
       <LandingHero />
