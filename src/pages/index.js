@@ -6,6 +6,10 @@ import BookACall from "@/Components/LandingPage/BookACall/BookACall";
 import FAQSection from "@/Components/LandingPage/FAQSections/FAQSection";
 
 export default function Home() {
+
+
+  
+
   return (
     <main>
       <Head>
@@ -21,11 +25,7 @@ export default function Home() {
           name="keywords"
           content="web design agency, web development services, digital experiences, creative web solutions, captivating websites, engaging user interfaces, website optimization, responsive design, conversion-focused websites, inspirational digital solutions, professional web designers, expert developers, user experience (UX) design, UI/UX optimization, online branding, digital transformation, innovative web solutions, custom web applications, modern website design, mobile-friendly websites, Resdium Digital"
         />
-        <meta
-          name="google-site-verification"
-          content="DRgXkUK42JTfoq_E3PUQhZOssMwL-eDz2AO05vQoU5M"
-        />
-
+     
         <meta
           property="og:title"
           content="Resdium: Crafting Digital Experiences | Web Design & Development Agency"
@@ -38,7 +38,8 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693558278/resdium-assets/Residum_p4cu5m.png"
         />
-        <meta property="og:url" content="https://resdium.netlify.app/" />
+        <meta property="og:url" content="https://www.resdium.live/" />
+        <link rel="canonical" href="https://www.resdium.live/" />
         <meta property="og:type" content="website" />
       </Head>
       <LandingHero />
