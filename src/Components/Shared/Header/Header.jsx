@@ -4,11 +4,12 @@ import Image from 'next/image';
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
+import { MAINBTN } from '@/Components/Modules/Buttons/Buttons';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
-        <header className=' top-0 sticky flex top-50 z-50 justify-between items-center py-4 md:py-6 px-4 md:px-10 lg:px-20 bg-[#F4F4F4]'>
+        <header className='shadow-lg top-0 sticky flex top-50 z-50 justify-between items-center py-4 md:py-6 px-4 md:px-10 lg:px-20 bg-[#F4F4F4]'>
             {/* Logo */}
             <div>
                 <Link href={'/'}>
@@ -43,7 +44,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link onClick={() => setOpen(!open)} href={'/contactUs'}>
-                            <p className='cursor-pointer'>CONTACT</p>
+                         <MAINBTN title={"CONTACT"}></MAINBTN>
                         </Link>
                     </li>
                 </ul>

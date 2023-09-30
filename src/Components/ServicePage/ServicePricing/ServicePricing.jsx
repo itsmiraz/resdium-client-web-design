@@ -26,7 +26,7 @@ const ServicePricing = () => {
 
     const PackageCard = ({ data }) => {
         return (
-            <div className='bg-[#284A62] h-full flex-col justify-between flex py-10 lg:px-3  px-4 space-y-10 rounded-ss-[40px] rounded-ee-[40px] text-white '>
+            <div className='bg-gradient-to-t from-[#284A62] to-[#3C6E71] h-full shadow-lg flex-col justify-between flex py-10 lg:px-3  px-4 space-y-10 rounded-ss-[40px] rounded-ee-[40px] text-white '>
 
                 <div className=''>
                     <h2 className='text-[40px] font-semibold'>{data.title}</h2>
@@ -95,7 +95,7 @@ const ServicePricing = () => {
     return (
         <div>
 
-            {isUserIsINbd() ? '' :
+            {/* {isUserIsINbd() ? '' : */}
                 <section className='px-6 lg:px-20 py-20'>
                     <div className='text-center'>
                         <h1 className='text-[#22323F] text-[26px] lg:text-[48px] leading-[28px] lg:leading-[52px]  font-bold'>
@@ -136,7 +136,10 @@ const ServicePricing = () => {
                         </div>
 
                     </div>
-                </section>}
+                </section>
+            
+            
+            {/* // } */}
 
 
         </div>
