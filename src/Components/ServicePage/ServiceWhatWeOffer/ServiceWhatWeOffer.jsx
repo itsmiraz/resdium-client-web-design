@@ -41,9 +41,9 @@ const ServiceWhatWeOffer = () => {
                             animate={animate ? 'animate' : 'initial'}
                             exit='exit'
                             variants={slideAnimation('left')}
-                            className='space-y-2 md:text-start text-center'>
-                            <h1 className='text-2xl font-semibold uppercase'>{data.title}</h1>
-                            <p className='text-sm '><Balancer>{data.desc}</Balancer></p>
+                            className='space-y-4 md:space-y-6 md:text-start text-center'>
+                            <h1 className='text-[28px] leading-[30px] lg:text-[32px] lg:leading-[34px] font-bold uppercase'>{data.title}</h1>
+                            <p className='text-sm  md:text-lg  md:leading-[22px]'><Balancer>{data.desc}</Balancer></p>
                         </motion.div>
                         <motion.div
 

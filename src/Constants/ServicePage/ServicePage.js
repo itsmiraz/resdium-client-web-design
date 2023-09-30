@@ -3,14 +3,14 @@ export const ServicePageSections = [
     title: "WEB DESIGN AND  DEVELOPMENT SERVICE",
     left: false,
     desc: "Dive into the heart of our web development prowess, where innovation meets functionality. Explore custom solutions, seamless user experiences, and transformative digital landscapes.",
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/web-dev-service-resdium_zuycpo.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050680/service-page-asstes/image_194_w7tvso.webp",
     alt: "resdium-digital-web-dev-service",
   },
   {
     title: "Who We Are",
     left: true,
     desc: "Resdium is a  digital agency specializing in cutting-edge web development solutions. With a passion for innovation and a commitment to excellence, we transform ideas into digital realities.",
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1694756305/resdium-assets/web-dev-service-2-resdium_lspdma.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050682/service-page-asstes/image_165_iynkn0.webp",
     alt: "resdium-who-we-are",
   },
 ];
@@ -89,14 +89,14 @@ export const servicePagePackage = {
 
 export const ServicewhatWeOfferConstants = [
   {
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692719831/resdium-assets/Service%20Page/responsive-developement-resdium_ktxm2m.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050679/service-page-asstes/image_137_tn9uoe.webp",
     alt: "responsive-developemt-img-resdium",
     left: false,
     title: "Responsive Development",
     desc: "Crafted for Excellence – Your website will seamlessly adapt  to any screen size, ensuring an optimal user experience on  desktops, tablets, and smartphones.",
   },
   {
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692719831/resdium-assets/Service%20Page/Blazing_Page_Speed-resdium_r7nefn.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050680/service-page-asstes/image_135_mdo4de.webp",
     alt: "blazing-page-Speed-img-resdium",
     left: true,
 
@@ -104,7 +104,7 @@ export const ServicewhatWeOfferConstants = [
     desc: "Speed Redefined – We optimize your website for lightning-fast loading times, targeting a score of 90+ on performance tests to keep visitors engaged.",
   },
   {
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692719831/resdium-assets/Service%20Page/Fortified_Security-resdium_tb9i56.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050680/service-page-asstes/image_138_uqavfs.webp",
     alt: "fortified-security-img-resdium",
     left: false,
 
@@ -112,7 +112,7 @@ export const ServicewhatWeOfferConstants = [
     desc: "Ironclad Protection – Our development integrates robust security measures, safeguarding your data and ensuring your users' trust.",
   },
   {
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692719831/resdium-assets/Service%20Page/SEO_Optimizations-resdum_yzq8nf.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050680/service-page-asstes/image_134_vuk1tx.webp",
     alt: "seo-optimizations-img-resdium",
     left: true,
 
@@ -120,7 +120,7 @@ export const ServicewhatWeOfferConstants = [
     desc: "Rise in Visibility – We implement strategic SEO techniques that enhance your website`s visibility, driving organic traffic and improving search rankings.",
   },
   {
-    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692719831/resdium-assets/Service%20Page/Elevating_User_Experience-resdium_hu7szj.webp",
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696050680/service-page-asstes/image_136_tu9kwo.webp",
     alt: "elevating-user-experience-img-resdium",
     left: false,
 

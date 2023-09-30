@@ -22,10 +22,10 @@ const BuildYourOnlineEmpire = () => {
     }, [inView]);
 
     return (
-        <div className='bg-[#284B63] h-fit  flex flex-col justify-center items-center my-20 w-full  lg:rounded-ss-[60px] lg:rounded-ee-[60px] py-20 px-6 lg:px-20'>
+        <div className='bg-gradient-to-b from-[#3C6E71] to-[#284B63] h-fit inner-shadow  flex flex-col justify-center items-center my-20 w-full  lg:rounded-ss-[60px] lg:rounded-ee-[60px] py-32 px-6 lg:px-20'>
             <div>
-                <h1 className='text-[24px] lg:text-[32px] font-bold text-center text-white'>
-                    {BuildYourOnlineEmpireConstants.title}
+                <h1 className='text-[24px] lg:text-[32px] lg:leading-[34px]  font-bold text-center text-white'>
+                BUILD YOUR ONLINE <br  className='md:block hidden'/> EMPIRE WITH US
                 </h1>
                 <div ref={BuildYourOnlineEmpiresectionRef}  className='flex md:flex-row flex-col-reverse  justify-center place-items-center mx-auto items-center mt-20 w-full gap-10'>
                     <motion.div
@@ -54,7 +54,7 @@ const BuildYourOnlineEmpire = () => {
                           exit='exit'
                           variants={slideAnimation('up')}
                         className='md:w-fit w-[100%]'  >
-                        <Image width={508} className='mx-auto' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
+                        <Image width={508} className='mx-auto shadow-lg' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
                     </motion.div>
                 </div>
             </div>

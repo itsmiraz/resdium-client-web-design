@@ -4,6 +4,7 @@ import BuildYourOnlineEmpire from "@/Components/LandingPage/BuildYourOnlineEmpir
 import WhatRESDIUMPROVIDES from "@/Components/LandingPage/WhatRESDIUMPROVIDES/WhatRESDIUMPROVIDES";
 import BookACall from "@/Components/LandingPage/BookACall/BookACall";
 import FAQSection from "@/Components/LandingPage/FAQSections/FAQSection";
+import OurBlogsSection from "@/Components/LandingPage/OurBlogsSection/OurBlogsSection";
 
 export default function Home() {
 
@@ -45,6 +46,7 @@ export default function Home() {
       <LandingHero />
       <BuildYourOnlineEmpire />
       <WhatRESDIUMPROVIDES />
+      <OurBlogsSection/>
       <BookACall />
       <FAQSection />
     </main>

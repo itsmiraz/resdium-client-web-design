@@ -16,12 +16,12 @@ const BlogCard = ({ blog }) => {
 
 
     return (
-        <div className='rounded-ss-[20px] relative  max-w-[395px] bg-[#EEE] rounded-ee-[20px] h-full overflow-hidden'>
+        <div className='rounded-ss-[20px] relative shadow-lg  max-w-[395px] bg-[#EEE] rounded-ee-[20px] h-full overflow-hidden'>
             <div className='w-full  lg:h-[220px] overflow-hidden'>
                 <Image width={395} height={252} className='w-full scale-100 hover:scale-110 transition-all duration-300' src={img} alt={alt} />
             </div>
 
-            <div className='p-4 relative ' >
+            <div className='p-4 relative shadow-inner ' >
                 <h1 className='text-2xl font-semibold'>{title.length > 42 ? `${title.slice(0, 42)}..` : title}</h1>
                 <p className='text-xs py-4'>
                     {outline.slice(0, 200)}..
