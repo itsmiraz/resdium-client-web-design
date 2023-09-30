@@ -42,19 +42,19 @@ const WhatRESDIUMPROVIDES = () => {
                         exit='exit'
                         variants={slideAnimation('up')}
                         className=' w-full lg:w-[50%]  lg:text-start text-start  space-y-8'>
-                        <h1 className='text-[32px] font-semibold text-[#414141] leading-[36px]'>
+                        <h1 className='text-[32px] font-semibold text-[#252525] leading-[36px]'>
                             {
                                 WhatRESDIUMPROVIDESConstants.subtitle
                             }
                         </h1>
-                        <p className='text-[#4B4F55] text-[16px] leading-[20px]'>
+                        <p className='text-[#383b3f] text-[18px]  font-medium leading-[22px]'>
                             <Balancer>
                                 {
                                     WhatRESDIUMPROVIDESConstants.desc
                                 }
                             </Balancer>
                         </p>
-                        <p className='text-[#4B4F55] text-[16px] leading-[20px]'>
+                        <p className='text-[#383b3f] text-[18px] font-medium  leading-[22px]'>
                             <Balancer>
                                 {
                                     WhatRESDIUMPROVIDESConstants.lastDesc

@@ -27,6 +27,12 @@ html {
 }
 
 
+/* Apply an inner shadow to an element */
+.inner-shadow {
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+
 /* Gradients */
 .teal-green-to-deep-blue-gradient {
   background: linear-gradient(to right, #3C6E71, #01437C);

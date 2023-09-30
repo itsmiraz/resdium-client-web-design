@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../Assets/Logos/resdium-logo-white.webp";
+import logo from "../../../Assets/Logos/resdium-logo.webp";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,7 +13,9 @@ const Footer = () => {
     <footer className="py-10 px-6 md:px-20 bg-[#284B63]">
       <div className="grid grid-cols-6 gap-10">
         <div className="col-span-5 lg:col-span-2">
+          <div className="bg-white w-fit p-2 rounded-se-[5px] rounded-es-[5px]">
           <Image src={logo} alt="resdium-logo" className="md:w-40 w-32" />
+       </div>
           <h1 className="text-white pt-6 pb-2 font-medium text-sm">
             Resdium Digital Ltd.
           </h1>
