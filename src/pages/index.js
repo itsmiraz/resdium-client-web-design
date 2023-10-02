@@ -37,11 +37,13 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693558278/resdium-assets/Residum_p4cu5m.png"
+          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1696046289/home-page-assets/resdium-branding-img.webp"
         />
         <meta property="og:url" content="https://www.resdium.live/" />
-        <link rel="canonical" href="https://www.resdium.live/" />
         <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+        <link rel="canonical" href="https://www.resdium.live/" />
       </Head>
       <LandingHero />
       <BuildYourOnlineEmpire />
