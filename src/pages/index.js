@@ -37,7 +37,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1696046289/home-page-assets/resdium-branding-img.webp"
+          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1696253867/resdium-assets/resdium-brand-iedentiy_euyiqi.webp"
         />
         <meta property="og:url" content="https://www.resdium.live/" />
         <meta property="og:type" content="website" />
