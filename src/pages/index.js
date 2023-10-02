@@ -32,6 +32,10 @@ export default function Home() {
           content="Resdium: Crafting Digital Experiences | Web Design & Development Agency"
         />
         <meta
+          property="og:site_name"
+          content="Resdium Digital"
+        />
+        <meta
           property="og:description"
           content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
         />
