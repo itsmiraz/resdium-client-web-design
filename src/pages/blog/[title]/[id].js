@@ -61,7 +61,6 @@ const SingleBlog = ({ blogDetails }) => {
         <meta property="og:image:alt" content={alt}></meta>
         <meta property="og:image:width" content="1200" />{" "}
         <meta property="og:image:height" content="630" />
-        <meta name="robots" content="noindex, nofollow" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@resdium" />
         <meta name="twitter:creator" content="@resdium" />
