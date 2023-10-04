@@ -46,7 +46,6 @@ export default function Home() {
         <meta property="og:url" content="https://www.resdium.live/" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
         <link rel="canonical" href="https://www.resdium.live/" />
       </Head>
       <LandingHero />

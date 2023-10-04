@@ -14,6 +14,7 @@ const Realestatewebsitedevelopment = () => {
           name="description"
           content={RealEstateServiceConstants.meta_description}
         />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="keywords" content={RealEstateServiceConstants.keywords} />
       </Head>
       <RealEstatePageHero />
