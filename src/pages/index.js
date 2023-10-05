@@ -26,11 +26,15 @@ export default function Home() {
           name="keywords"
           content="web design agency, web development services, digital experiences, creative web solutions, captivating websites, engaging user interfaces, website optimization, responsive design, conversion-focused websites, inspirational digital solutions, professional web designers, expert developers, user experience (UX) design, UI/UX optimization, online branding, digital transformation, innovative web solutions, custom web applications, modern website design, mobile-friendly websites, Resdium Digital"
         />
-     
+         <meta
+          property="site_name"
+          content="Resdium Digital"
+        />
         <meta
           property="og:title"
           content="Resdium: Crafting Digital Experiences | Web Design & Development Agency"
         />
+    
         <meta
           property="og:site_name"
           content="Resdium Digital"
@@ -45,8 +49,6 @@ export default function Home() {
         />
         <meta property="og:url" content="https://www.resdium.live/" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
         <link rel="canonical" href="https://www.resdium.live/" />
       </Head>
       <LandingHero />
