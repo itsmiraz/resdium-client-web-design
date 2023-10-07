@@ -11,8 +11,7 @@ const Service = () => {
     <section>
       <Head>
         <title>
-          Professional Web Development Services by Resdium Digital- Transforming
-          Your Digital Landscape
+          Services | Resdium Digital
         </title>
         <meta
           name="description"
