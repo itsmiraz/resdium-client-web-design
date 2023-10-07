@@ -76,7 +76,7 @@ const [loading, setloading] = useState(false);
         ></meta>
       </Head>
 
-      <div className="absolute z-10 top-0 left-0 h-[591px] w-full bg-[#284B63] md:rounded-bl-[80px]"></div>
+      <div className="absolute inner-shadow z-10 top-0 left-0 h-[591px] w-full bg-gradient-to-l from-[#1d2a42] to-[#3C6E71]  md:rounded-bl-[40px]"></div>
       <div className="relative px-6 md:px-10 lg:px-20 py-20 lg:py-32 z-20 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20">
         <div className="space-y-4">
           <h2 className="text-xl font-medium text-white">CONTACT US</h2>
@@ -148,7 +148,7 @@ const [loading, setloading] = useState(false);
           {/* Form */}
           <form
             onSubmit={handleForm}
-            className="bg-white md:drop-shadow-md md:p-8 lg:p-14 sticky top-32 rounded-ss-3xl rounded-ee-3xl space-y-6"
+            className="bg-white md:drop-shadow-xl md:p-8 lg:p-14 sticky top-32 rounded-ss-3xl rounded-ee-3xl space-y-6"
           >
             {/* Name */}
 
