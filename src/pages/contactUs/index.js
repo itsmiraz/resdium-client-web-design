@@ -74,6 +74,8 @@ const [loading, setloading] = useState(false);
           name="description"
           content="Get in touch with Resdium, a web solutions agency, for all your web-related needs. Contact us for web design, development, and other digital solutions."
         ></meta>
+        <link rel="canonical" href="https://resdium.live/contactUs" />
+
       </Head>
 
       <div className="absolute inner-shadow z-10 top-0 left-0 h-[591px] w-full bg-gradient-to-l from-[#1d2a42] to-[#3C6E71]  md:rounded-bl-[40px]"></div>
