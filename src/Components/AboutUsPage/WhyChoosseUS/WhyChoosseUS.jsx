@@ -1,9 +1,23 @@
 import MainContainer from '@/Components/Shared/MainContainer/MainContainer';
 import { AboutUsWhyChooseUs } from '@/Constants/AboutUsPage/AboutUsPageConstants';
 import Image from 'next/image';
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 const WhyChoosseUS = () => {
+    const [sectionRef, inView] = useInView({
+        triggerOnce: true, // Trigger animation once when it enters the viewport
+        threshold: 0.2, // Adjust this threshold as needed
+    });
+
+    // State to control whether animations should play
+    const [startAnimate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            setAnimate(true);
+        }
+    }, [inView]);
 
 
 
@@ -12,13 +26,16 @@ const WhyChoosseUS = () => {
         <div className='px-6'>
             <div>
                 <h1 className='text-center pt-10  font-semibold text-[#212121] text-[40px]'>Why Choose Us</h1>
-                <div className='max-w-[699px] mx-auto space-y-10 pb-32 pt-10'>
+                <div ref={sectionRef} className='max-w-[699px] mx-auto space-y-10 pb-32 pt-10'>
                     {
-                        AboutUsWhyChooseUs.map((data, i) => <div
+                        AboutUsWhyChooseUs.map((data, i) => <motion.div
+                            initial={{ opacity: 0, y: 200 }}
+                            animate={{ opacity: startAnimate ? 1 : 0, y: startAnimate ? 0 : 200 }}
+                            transition={{ duration: 0.2, delay: i * 0.3 }}
                             key={i}
-                            style={{backgroundColor:`${data.backGround}`}}
+                            style={{ backgroundColor: `${data.backGround}` }}
                             className={`flex lg:flex-row flex-col lg:justify-start justify-center items-center p-8 gap-6 rounded-ss-[30px] rounded-ee-[30px]`}>
-                          
+
                             <div className=' mx-auto lg:w-[20%]'>
                                 <Image src={data.icon} alt={data.alt} />
                             </div>
@@ -28,7 +45,7 @@ const WhyChoosseUS = () => {
                                     {data.desc}
                                 </p>
                             </div>
-                        </div>)
+                        </motion.div>)
                     }
                 </div>
             </div>

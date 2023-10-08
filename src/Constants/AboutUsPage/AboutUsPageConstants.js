@@ -6,7 +6,7 @@ import TailoredSolutions from "../../Assets/Aboutus/Icons/Tailored Solutions.svg
 export const AboutUsHeroConstants = {
   title: "Welcome to Resdium: Crafting  Digital Excellence",
   desc: "At Resdium, we`re not just another digital agency; we`re your dedicated partner in harnessing the power of the online world.   We understand that in today`s fast-paced business landscape, a   strong online presence is no longer a luxury – it`s a necessity.",
-  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1692785936/resdium-assets/about-us-hero-resdium_mmlkp6.png",
+  img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1696731403/resdium-assets/about_us_oz6cuv.webp",
   alt: "about-us-resdium-hero-img",
   cta: "Contact US",
 };
