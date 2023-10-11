@@ -40,7 +40,7 @@ const LandingHero = () => {
                         {HeroConstants.title}
                        </Balancer>
                     </h1>
-                    <p className='text-[#666] text-[15px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium'>
+                    <p className='text-[#666] text-[16px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium'>
                         <Balancer>
                             {
                                 HeroConstants.desc

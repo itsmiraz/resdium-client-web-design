@@ -14,6 +14,8 @@ const Realestatewebsitedevelopment = () => {
           name="description"
           content={RealEstateServiceConstants.meta_description}
         />
+        <link rel="canonical" href="https://resdium.live/real-estate-website-development" />
+
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="keywords" content={RealEstateServiceConstants.keywords} />
       </Head>

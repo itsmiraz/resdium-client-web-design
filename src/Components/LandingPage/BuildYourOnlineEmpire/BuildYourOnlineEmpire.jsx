@@ -37,8 +37,8 @@ const BuildYourOnlineEmpire = () => {
                         {
                             BuildYourOnlineEmpireConstants?.steps.map((data) =>
                                 <div key={data.id} className='space-y-2 md:text-start text-start'>
-                                    <h1 className='text-xl font-semibold text-white'>{data.title}</h1>
-                                    <p className='text-xs text-[#D9D9D9]'>
+                                    <h1 className='text-2xl font-semibold text-white'>{data.title}</h1>
+                                    <p className=' text-[16px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium text-[#D9D9D9]'>
                                         <Balancer>
                                             {data.desc}
                                         </Balancer>
@@ -54,7 +54,7 @@ const BuildYourOnlineEmpire = () => {
                           exit='exit'
                           variants={slideAnimation('up')}
                         className='md:w-fit w-[100%]'  >
-                        <Image width={508} className='mx-auto shadow-lg' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
+                        <Image width={558} className='mx-auto shadow-lg' height={403} src={BuildYourOnlineEmpireConstants.img} alt={BuildYourOnlineEmpireConstants.alt} />
                     </motion.div>
                 </div>
             </div>

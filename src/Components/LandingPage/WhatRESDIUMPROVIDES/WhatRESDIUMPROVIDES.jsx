@@ -47,14 +47,14 @@ const WhatRESDIUMPROVIDES = () => {
                                 WhatRESDIUMPROVIDESConstants.subtitle
                             }
                         </h1>
-                        <p className='text-[#383b3f] text-[18px]  font-medium leading-[22px]'>
+                        <p className='text-[#666] text-[16px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium'>
                             <Balancer>
                                 {
                                     WhatRESDIUMPROVIDESConstants.desc
                                 }
                             </Balancer>
                         </p>
-                        <p className='text-[#383b3f] text-[18px] font-medium  leading-[22px]'>
+                        <p className='text-[#666] text-[16px]  lg:leading-normal leading-[18px] md:leading-[20px] font-medium'>
                             <Balancer>
                                 {
                                     WhatRESDIUMPROVIDESConstants.lastDesc
