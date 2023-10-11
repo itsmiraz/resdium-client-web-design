@@ -7,7 +7,10 @@ const Blogs = () => {
   return (
     <div>
       <Head>
+       
         <meta charSet="UTF-8" />
+        <title>Insights and Ideas for Digital Excellence | Resdium Blog</title>
+       
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
@@ -18,9 +21,8 @@ const Blogs = () => {
           content="digital agency, web design, web development, digital marketing, online business, technology trends"
         />
         <meta name="author" content="Resdium" />
-        <link rel="canonical" href="https://www.resdium.live/blogs" />
+        <link rel="canonical" href="https://resdium.live/blogs" />
         
-        <title>Insights and Ideas for Digital Excellence | Resdium Blog</title>
       </Head>
 
       <BlogPageHero />
