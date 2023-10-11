@@ -23,7 +23,7 @@ const BlogCard = ({ blog }) => {
 
             <div className='p-4 relative shadow-inner ' >
                 <h1 className='text-2xl font-semibold'>{title.length > 42 ? `${title.slice(0, 42)}..` : title}</h1>
-                <p className='text-xs py-4'>
+                <p className='text-[#666] text-[16px]  lg:leading-[20px] leading-[18px] md:leading-[20px] font-medium py-4'>
                     {outline.slice(0, 200)}..
                 </p>
                 <div className=''>
