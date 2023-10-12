@@ -10,11 +10,12 @@ export default function Home() {
   return (
     <main>
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>
           Resdium Digital: Crafting Digital Experiences | Web Design &
           Development Agency
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        
         <meta
           name="description"
