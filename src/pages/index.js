@@ -14,6 +14,8 @@ export default function Home() {
           Resdium Digital: Crafting Digital Experiences | Web Design &
           Development Agency
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
         <meta
           name="description"
           content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
