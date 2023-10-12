@@ -49,7 +49,7 @@ const OurBlogsSection = () => {
 
 
     return (
-        <div ref={sectionRef} className=' px-6 lg:px-20'>
+        <div ref={sectionRef} className='py-20 px-6 lg:px-20'>
             <motion.div
                 initial='initial'
                 animate={animate ? 'animate' : 'initial'}
