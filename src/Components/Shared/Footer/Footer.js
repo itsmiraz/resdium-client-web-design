@@ -6,6 +6,7 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillLinkedin,
+  AiFillYoutube
 } from "react-icons/ai";
 
 const Footer = () => {
@@ -103,6 +104,15 @@ const Footer = () => {
             <li>
               <Link
                 target="_blank"
+                aria-label="Youtube Link"
+                href={"https://www.youtube.com/@Resdium"}
+              >
+                <AiFillYoutube />
+              </Link>
+            </li>
+            <li>
+              <Link
+                target="_blank"
                 aria-label="Linkdin Link"
                 href={"https://www.linkedin.com/company/resdium/"}
               >
@@ -118,6 +128,7 @@ const Footer = () => {
                 <AiFillInstagram />
               </Link>
             </li>
+        
           </ul>
         </div>
       </div>
