@@ -105,7 +105,7 @@ const Footer = () => {
               <Link
                 target="_blank"
                 aria-label="Youtube Link"
-                href={"https://www.youtube.com/channel/UCAvv4r8dnW8YEMlC0FhJFrQ"}
+                href={"https://www.youtube.com/@Resdium"}
               >
                 <AiFillYoutube />
               </Link>
