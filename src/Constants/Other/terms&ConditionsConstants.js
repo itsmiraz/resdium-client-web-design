@@ -39,7 +39,7 @@ export const TermsAndConditionsConstants = {
       },
       {
         "section": "Contact Information",
-        "content": "For any questions or clarifications regarding our payment terms or any other aspect of our services, please don't hesitate to contact us at miraj@resdium.live"
+        "content": "For any questions or clarifications regarding our payment terms or any other aspect of our services, please don't hesitate to contact us at info@resdium.live"
       },
     
     ]
