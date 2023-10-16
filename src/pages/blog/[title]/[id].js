@@ -49,7 +49,7 @@ const SingleBlog = ({ blogDetails }) => {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={`https://resdium.live/${siteUrl}/${_id} `}
+          content={`https://www.resdium.live/${siteUrl}/${_id} `}
         />
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />

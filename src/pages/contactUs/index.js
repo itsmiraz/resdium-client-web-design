@@ -74,7 +74,7 @@ const [loading, setloading] = useState(false);
           name="description"
           content="Get in touch with Resdium, a web solutions agency, for all your web-related needs. Contact us for web design, development, and other digital solutions."
         ></meta>
-        <link rel="canonical" href="https://resdium.live/contactUs" />
+        <link rel="canonical" href="https://www.resdium.live/contactUs" />
 
       </Head>
 
