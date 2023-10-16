@@ -10,13 +10,12 @@ export default function Home() {
   return (
     <main>
       <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>
-          Resdium Digital: Crafting Digital Experiences | Web Design &
-          Development Agency
+          Resdium Digital | Transforming Ideas into Digital Realities
         </title>
-       
+
         <meta
           name="description"
           content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
@@ -26,11 +25,15 @@ export default function Home() {
           content="web design agency, web development services, digital experiences, creative web solutions, captivating websites, engaging user interfaces, website optimization, responsive design, conversion-focused websites, inspirational digital solutions, professional web designers, expert developers, user experience (UX) design, UI/UX optimization, online branding, digital transformation, innovative web solutions, custom web applications, modern website design, mobile-friendly websites, Resdium Digital"
         />
         <meta name="site_name" content="Resdium Digital" key="site_name" />
-        <meta property="og:site_name" content="Resdium Digital"  key="site_name"  />
+        <meta
+          property="og:site_name"
+          content="Resdium Digital"
+          key="site_name"
+        />
         <meta
           property="og:title"
           key="og-title"
-          content="Resdium Digital: Crafting Digital Experiences | Web Design & Development Agency"
+          content="Resdium Digital | Transforming Ideas into Digital Realities"
         />
 
         <meta
