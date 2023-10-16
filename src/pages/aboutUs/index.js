@@ -18,7 +18,7 @@ const AboutUs = () => {
           name="keywords"
           content="Digital agency, web development, creative solutions, Resdium, about us, web solutions, technology, commitment"
         />
-        <link rel="canonical" href="https://www.resdium.live/aboutUs" />
+        <link rel="canonical" href="https://resdium.live/aboutUs" />
       </Head>
       <AboutUsHero />
       <AboutUsSection />

@@ -46,9 +46,9 @@ export default function Home() {
           content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1696253867/resdium-assets/resdium-brand-iedentiy_euyiqi.webp"
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-        <meta property="og:url" content="https://www.resdium.live/" />
+        <meta property="og:url" content="https://resdium.live/" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.resdium.live/" />
+        <link rel="canonical" href="https://resdium.live/" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sammy the Shark" />
