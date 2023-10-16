@@ -24,11 +24,9 @@ export default function Home() {
           name="keywords"
           content="web design agency, web development services, digital experiences, creative web solutions, captivating websites, engaging user interfaces, website optimization, responsive design, conversion-focused websites, inspirational digital solutions, professional web designers, expert developers, user experience (UX) design, UI/UX optimization, online branding, digital transformation, innovative web solutions, custom web applications, modern website design, mobile-friendly websites, Resdium Digital"
         />
-        <meta name="site_name" content="Resdium Digital" key="site_name" />
         <meta
           property="og:site_name"
           content="Resdium Digital"
-          key="site_name"
         />
         <meta
           property="og:title"
@@ -42,7 +40,6 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          key="og-image"
           content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1696253867/resdium-assets/resdium-brand-iedentiy_euyiqi.webp"
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
@@ -50,17 +47,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://resdium.live/" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sammy the Shark" />
-        <meta name="twitter:site" content="@resdium" />
-        <meta
-          name="twitter:description"
-          content="Transform your digital presence with Resdium - a leading web design and development agency. We specialize in creating captivating websites that engage, convert, and inspire."
-        />
-        <meta
-          name="twitter:image"
-          content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1696253867/resdium-assets/resdium-brand-iedentiy_euyiqi.webp"
-        />
+       
       </Head>
       <LandingHero />
       <BuildYourOnlineEmpire />
