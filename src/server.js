@@ -1,3 +1,4 @@
+// In your Next.js custom server (server.js):
 const express = require('express');
 const next = require('next');
 
@@ -8,17 +9,21 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  // Configure caching headers for static assets
-  server.use('/_next/static', express.static('out/_next/static', {
-    maxAge: '365d', // Set a suitable cache duration
-  }));
+  // Redirect www to non-www
+  server.get('/*', (req, res, next) => {
+    if (req.headers.host.startsWith('www.')) {
+      const newUrl = req.protocol + '://' + req.headers.host.replace('www.', '') + req.url;
+      return res.redirect(301, newUrl);
+    }
+    return next();
+  });
 
-  server.get('*', (req, res) => {
+  server.all('*', (req, res) => {
     return handle(req, res);
   });
 
-  server.listen(3000, err => {
+  server.listen(3000, (err) => {
     if (err) throw err;
-    console.log('> Ready on http://localhost:3000');
+    console.log('Next.js app is running on port 3000');
   });
 });
