@@ -1,3 +1,29 @@
+import tech from '../../../public/Assets/Icons/cutting-edge-tech.webp'
+import report from '../../../public/Assets/Icons/transparent-reporting.webp'
+import industry from '../../../public/Assets/Icons/industry-expertise.webp'
+
+
+export const WhyChooseUsHome = [
+  {
+    icon: tech,
+    alt: 'cutting-edge-tech-icon',
+    title: "Cutting-Edge Technology",
+    desc:'We stay at the forefront of digital innovation. Our agency is equipped with the latest tools and technologies to ensure that your digital presence remains ahead of the curve.'
+  },
+  {
+    icon: industry,
+    alt: 'industry-expertise-icon',
+    title: "Industry Expertise",
+    desc:'At Resdium Digital, we bring a wealth of expertise and experience to the table. Our team of digital professionals has a proven track record of delivering exceptional results in various industries.'
+  },
+  {
+    icon: report,
+    alt: 'transparent-reporting-icon',
+    title: "Transparent Reporting",
+    desc:'You deserve to know where your investment is going. We provide transparent, detailed reports on the progress and performance of your digital marketing efforts, so you can make informed decisions.'
+  },
+]
+
 const HeroConstants = {
   title: "EMPOWER YOUR DIGITAL PRESENCE",
   desc: "Unleash the power of the web with Resdium Digital's comprehensive suite of digital services. From stunning web design to strategic SEO, we`re your partner in achieving online excellence.",

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +11,22 @@
 html {
   scroll-behavior: smooth;
   transition: opacity 0.4s ease-in-out, transform 0.5s ease;
+}
+
+
+.section-title{
+  @apply text-[32px] md:text-[40px] font-bold leading-[140%] tracking-tighter
+}
+
+.section-desc{
+  @apply text-[14px] md:text-[16px] font-medium leading-[140%];
+}
+
+.h1-bold {
+  @apply text-[36px] font-bold leading-[140%] tracking-tighter;
+}
+.base-medium {
+  @apply text-[16px] font-medium leading-[140%];
 }
 
 /* Scroll Bar Customizations */

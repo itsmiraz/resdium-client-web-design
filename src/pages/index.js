@@ -5,6 +5,8 @@ import WhatRESDIUMPROVIDES from "@/Components/LandingPage/WhatRESDIUMPROVIDES/Wh
 import BookACall from "@/Components/LandingPage/BookACall/BookACall";
 import FAQSection from "@/Components/LandingPage/FAQSections/FAQSection";
 import OurBlogsSection from "@/Components/LandingPage/OurBlogsSection/OurBlogsSection";
+import HomePageWhyChoosseUS from "@/Components/LandingPage/HomePageWhyChoosseUS/HomePageWhyChoosseUS";
+// import WhyChoosseUS from "@/Components/AboutUsPage/WhyChoosseUS/WhyChoosseUS";
 
 export default function Home() {
   return (
@@ -52,6 +54,7 @@ export default function Home() {
       <LandingHero />
       <BuildYourOnlineEmpire />
       <WhatRESDIUMPROVIDES />
+      <HomePageWhyChoosseUS/>
       <OurBlogsSection />
       <BookACall />
       <FAQSection />
