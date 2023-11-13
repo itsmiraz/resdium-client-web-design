@@ -1,17 +1,13 @@
-import { BlogHeroConstants } from '@/Constants/BlogPage/BlogPageConstants';
-import Image from 'next/image';
 import React from 'react';
 import { Balancer } from 'react-wrap-balancer';
 
 const BlogPageHero = () => {
     return (
-        <div className='px-6 lg:px-20 py-10 md:mb-32 relative  lg:py-32  inner-shadow bg-[#284B63]'>
-            <div className=' place-items-center gap-10 md:pb-20 px-4'>
-                <div className='text-center'>
-                    <h1 className='text-[34px] leading-[36px] text-white lg:text-[64px] font-bold lg:leading-[72px]  '>
-                        {
-                            BlogHeroConstants.title
-                        }
+        <div className='px-10 lg:px-20 py-20 relative  lg:py-32 rounded-es-[30px]  inner-shadow bg-gradient-to-r from-[#307280] to-[#263C47]'>
+            <div className='text-start'>
+                <span className='text-white bg-[#263C47] px-3 py-1 rounded-ss-[3px] rounded-ee-[3px] '>BLOGS</span>
+                    <h1 className='text-[34px] leading-[36px] text-white lg:text-[64px] mt-2 font-bold lg:leading-[72px]  '>
+                    Explore Our Latest Blogs
 
                     </h1>
                     <p className='text-[#cacaca] text-[12px] leading-[16px]  lg:text-[18px] lg:leading-[20px] mt-3 lg:mt-6 font-medium'>
@@ -22,14 +18,7 @@ const BlogPageHero = () => {
                     </p>
                 </div>
 
-             
-                {/* <div className='lg:order-last order-first mx-auto'>
-                    <Image width={500} className='rounded-ss-[30px] rounded-ee-[40px]' height={500} src={BlogHeroConstants.img} alt={BlogHeroConstants.alt} />
-                </div> */}
-            </div>
-            <div className='absolute md:block hidden left-1/2 -translate-x-1/2 -bottom-36 w-fit   mt-10 transform '>
-                <Image className='' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1696731403/resdium-assets/blog-ero_xfst71.webp'} alt='blog-hero-img-resdium' width={600} height={300}/>
-            </div>
+            
 
         </div>
     );

@@ -1,5 +1,6 @@
 import BlogPageHero from "@/Components/BlogPage/BlogPageHero/BlogPageHero";
 import BlogsSection from "@/Components/BlogPage/BlogsSection/BlogsSection";
+import FeaturedBlog from "@/Components/BlogPage/FeaturedBlog/FeaturedBlog";
 import Head from "next/head";
 import React from "react";
 
@@ -26,6 +27,7 @@ const Blogs = () => {
       </Head>
 
       <BlogPageHero />
+      <FeaturedBlog/>
       <BlogsSection />
     </div>
   );
