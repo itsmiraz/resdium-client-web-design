@@ -14,7 +14,7 @@ const BlogsSection = () => {
     const currentPage = query.page ? parseInt(query.page) : 1;
     const perPage = 9; // Number of items per page
 
-    const { data: blogs, isInitialLoading, isError, isLoading } = useQuery({
+    const { data: blogs,  isError, isLoading } = useQuery({
         queryKey: ['blogs', currentPage, perPage],
         queryFn: async () => {
             try {
@@ -39,9 +39,9 @@ const BlogsSection = () => {
 
     return (
         <div className='py-10 lg:py-20 px-6 lg:px-20'>
-            <h1 className='py-10 text-gray-700 text-4xl font-bold uppercase text-center'>
+            <h2 className="font-medium text-2xl pb-4">
                 Blogs
-            </h1>
+            </h2>
             <div className=''>
 
                 {
