@@ -56,7 +56,7 @@ const FeaturedBlog = () => {
                                         {blogs[0].outline.slice(0, 200)}..
                                     </p>
                                     <div className=''>
-                                        <Link href={'/blog/[title]/[id]'} as={`/blog/${blogs[0].siteUrl}/${blogs[0]._id}`}>
+                                        <Link href={'/blog/[url]'} as={`/blog/${blogs[0].siteUrl}`}>
                                             <MAINBTN title={'Read More'} />
                                         </Link>
                                     </div>
@@ -98,7 +98,7 @@ const HorizontalBlogCard = ({ data }) => {
             </div>
             <h2 className='text-[16px] md:text-xl leading-[16px] lg:leading-[22px] font-medium'>{title.slice(0,40)}</h2>
             <div>
-                <Link  href={'/blog/[title]/[id]'} as={`/blog/${siteUrl}/${_id}`}>
+                <Link  href={'/blog/[url]'} as={`/blog/${siteUrl}`}>
                     <button className='flex text-xs md:text-lg gap-x-2 items-center'>Read More  <AiOutlineRight /></button>
                 </Link>
           </div>
