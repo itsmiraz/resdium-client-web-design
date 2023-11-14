@@ -28,7 +28,7 @@ const BlogCard = ({ blog }) => {
                     {outline.slice(0, 200)}..
                 </p>
                 <div className=''>
-                    <Link href={'/blog/[title]/[id]'} as={`/blog/${siteUrl}/${_id}`}>
+                    <Link href={'/blog/[url]'} as={`/blog/${siteUrl}`}>
                         <MAINBTN title={'Read More'} />
                     </Link>
                 </div>

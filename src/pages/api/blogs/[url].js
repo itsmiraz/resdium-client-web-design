@@ -1,22 +1,21 @@
 import { connectToDatabase } from "@/lib/mongoDb";
-import { ObjectId } from "mongodb"; // Import ObjectId from the MongoDB library
 
 export default async function handler(req, res) {
     try {
       
             const client = await connectToDatabase();
             const db = client.db("resdium");
-            const id = req.query.id; // Assuming the ID is available in the request parameters
+            const url = req.query.url; // Assuming the ID is available in the request parameters
             // Convert the id to ObjectId
-            if (!id) {
+            if (!url) {
                 return res.status(404).json({ error: "ID is Required" })
             }
             // Find the document with the specified ObjectId
-            const blog = await db.collection("blogs").findOne({ _id: new ObjectId(id) });
+            const blog = await db.collection("blogs").findOne({ siteUrl : url });
     
             if (!blog) {
                 return res.status(404).json({ error: "blog not found" });
-            }
+        }
             // Send the found document as a response (if needed)
             res.status(200).json(blog);
 

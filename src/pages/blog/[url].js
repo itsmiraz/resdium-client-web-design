@@ -8,8 +8,8 @@ import { Balancer } from "react-wrap-balancer";
 
 export async function getServerSideProps({ params }) {
   // params contains the route parameters, including 'id'
-  const { id } = params;
-  const blogDetails = await fetchBlogDetails(id);
+  const { url } = params;
+  const blogDetails = await fetchBlogDetails(url);
 
   return {
     props: {
@@ -20,7 +20,6 @@ export async function getServerSideProps({ params }) {
 
 const SingleBlog = ({ blogDetails }) => {
 
-  
 
   if (!blogDetails?.title) {
     return <BlogDetailsSkelton />;
@@ -49,7 +48,7 @@ const SingleBlog = ({ blogDetails }) => {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={`https://resdium.live/${siteUrl}/${_id} `}
+          content={`https://resdium.live/${siteUrl}`}
         />
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
