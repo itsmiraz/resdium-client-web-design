@@ -116,7 +116,7 @@ const SingleBlog = ({ blogDetails }) => {
         <section>
           {content?.map((data, i) => (
             <div key={i} className="space-y-2 mb-10">
-              <h1 className="text-xl font-semibold ">{data.section}</h1>
+              <h2 className="text-xl font-semibold ">{data.section}</h2>
               <p className="lg:text-lg text-sm text-medium">
                 <Balancer>{data.content}</Balancer>
               </p>
