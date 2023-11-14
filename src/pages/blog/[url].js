@@ -50,6 +50,8 @@ const SingleBlog = ({ blogDetails }) => {
           property="og:url"
           content={`https://resdium.live/${siteUrl}`}
         />
+        <link rel="canonical" href={`https://resdium.live/${siteUrl}`} />
+
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
         <meta name="keywords" content={keywords} />
