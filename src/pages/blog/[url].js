@@ -7,7 +7,6 @@ import React  from "react";
 import { Balancer } from "react-wrap-balancer";
 
 export async function getServerSideProps({ params }) {
-  // params contains the route parameters, including 'id'
   const { url } = params;
   const blogDetails = await fetchBlogDetails(url);
 
@@ -26,7 +25,6 @@ const SingleBlog = ({ blogDetails }) => {
   }
 
   const {
-    _id,
     title,
     keywords,
     meta_description,
@@ -48,9 +46,9 @@ const SingleBlog = ({ blogDetails }) => {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={`https://resdium.live/${siteUrl}`}
+          content={`https://resdium.live/blog/${siteUrl}`}
         />
-        <link rel="canonical" href={`https://resdium.live/${siteUrl}`} />
+        <link rel="canonical" href={`https://resdium.live/blog/${siteUrl}`} />
 
         <meta property="og:site_name" content="Resdium" />
         <meta property="og:title" content={`${title}| Resdium Blogs`} />
@@ -60,7 +58,7 @@ const SingleBlog = ({ blogDetails }) => {
         <meta name="twitter:widgets:csp" content="on" />
         <meta property="og:image" content={img} />
         <meta property="og:image:alt" content={alt}></meta>
-        <meta property="og:image:width" content="1200" />{" "}
+        <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@resdium" />
