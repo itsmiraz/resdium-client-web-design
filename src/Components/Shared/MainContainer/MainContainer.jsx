@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MainContainer = ({children}) => {
+const MainContainer = ({ children }) => {
     return (
-        <section className='h-full z-10 lg:h-full  flex flex-col justify-center items-center px-6 lg:py-32 py-10 md:py-20 md:px-20'>
+        <section className='h-full z-10 lg:h-full  flex flex-col justify-center items-center px-6 lg:py-20 py-10 md:py-20 md:px-20'>
             {children}
         </section>
     );
