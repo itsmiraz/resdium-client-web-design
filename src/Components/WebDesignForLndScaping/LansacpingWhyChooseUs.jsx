@@ -26,14 +26,14 @@ const LansacpingWhyChooseUs = () => {
 export default LansacpingWhyChooseUs;
 
 
-const FeatureCard = ({ data }) => {
+export const FeatureCard = ({ data }) => {
 
     const { icon, title, desc, alt } = data
 
     return <div className="flex  flex-col justify-center items-center">
         <Image src={icon} alt={alt} width={64} height={64} />
         <h3 className="h3-semibold pt-2 pb-2 text-[#2A3342]">{title}</h3>
-        <p className="section-desc  text-[#666666da] text-center">
+        <p className="section-desc px-2 text-[#3b3b3bec] text-center">
             <Balancer>
                 {
                     desc
