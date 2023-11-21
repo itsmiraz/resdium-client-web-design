@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         "primary-2": "#3C6E71",
         "primary-1": "#284B63",
+        "head-text": "#2A3342",
       },
     },
   },

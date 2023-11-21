@@ -62,3 +62,52 @@ export const HowItWorksSeo = {
     },
   ],
 };
+
+export const SeoPricingConst = [
+  {
+    title: "Starter Package",
+    monthlyPricing: "500",
+    annualPricing: "5500",
+    description:
+      "Ideal for small businesses with limited needs, our Starter Package is the stepping stone to enhanced online visibility. Benefit from essential on-page optimizations, content creation, and monthly reporting to kickstart your SEO journey.",
+    highlights: [
+      "Initial Website Audit",
+      "On-Page Optimization",
+      "Basic Content Creation (4 blog posts/month)",
+      "Monthly Reporting and Analysis",
+    ],
+  },
+  {
+    title: "Intermediate Package",
+    monthlyPricing: "1,000",
+    annualPricing: "11,000",
+    description:
+      "Perfect for medium-sized businesses aiming for steady growth, our Intermediate Package amplifies your SEO efforts. Enjoy a comprehensive suite of on-page and off-page optimizations, coupled with a more extensive content creation plan.",
+    highlights: [
+      "Initial Website Audit and Analysis",
+      "On-Page and Off-Page Optimization",
+      "Advanced Content Creation (4 high-quality blog posts/month)",
+      "Local SEO Optimization",
+      "Monthly SEO Performance Reports",
+      "Ongoing SEO Consultation",
+    ],
+  },
+  {
+    title: "Advanced Package",
+    monthlyPricing: "2,500",
+    annualPricing: "25,000",
+    description:
+      "For businesses with ambitious digital goals, our Advanced Package delivers a robust SEO strategy for unparalleled results. Experience the full spectrum of on-page and off-page optimizations, advanced content creation, and in-depth monthly reporting for comprehensive insights.",
+    highlights: [
+      "Initial Website Audit and Analysis",
+      "Comprehensive On-Page and Off-Page Optimization",
+      "Advanced Content Creation (4 high-quality blog posts/month)",
+      "Local SEO Optimization",
+      "Social Media Profile Optimization",
+      "Monthly SEO Performance Reports",
+      "Keyword Ranking Tracking",
+      "Google Analytics Analysis",
+      "Ongoing SEO Consultation",
+    ],
+  },
+];
