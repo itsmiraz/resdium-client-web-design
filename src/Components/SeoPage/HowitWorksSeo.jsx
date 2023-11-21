@@ -4,8 +4,8 @@ import React from 'react';
 
 const HowitWorksSeo = () => {
     return (
-        <div className='px-20 py-20 grid grid-cols-2 gap-14'>
-            <div className='h-[704px] rounded-ee-[20px] rounded-ss-[20px]  overflow-hidden'>
+        <div className='px-6 lg:px-20 py-20 grid   grid-cols-1 md:grid-cols-2 gap-4 lg:gap-14'>
+            <div className='lg:h-[704px] rounded-ee-[20px] rounded-ss-[20px]  overflow-hidden'>
 
                 <Image src={HowItWorksSeo.img} alt={HowItWorksSeo.alt} height={654} width={576} className='w-full ' />
             </div>
@@ -32,14 +32,14 @@ const HowItWorksCard = ({ data, i }) => {
 
     return <div className='mt-4'>
 
-        <span className='px-6 py-4  text-xl font-bold text-white rounded-full bg-primary-2'>
+        <span className='px-4 lg:px-6 py-2 lg:py-4  text-lg lg:text-xl font-bold text-white rounded-full bg-primary-2'>
             {i + 1}
         </span>
-        <h3 className='pb-2 mt-6  h3-semibold'>
+        <h3 className='pb-2 mt-6 font-semibold text-xl md:h3-semibold'>
             {data.subtitle}
 
         </h3>
-        <p className='section-desc text-[#1d1d1de7]'>
+        <p className='text-xs font-medium leading-[110%] md:text-sm text-[#1d1d1de7]'>
             {data.content}
         </p>
 

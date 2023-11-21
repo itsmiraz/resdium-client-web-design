@@ -29,7 +29,13 @@ const Header = () => {
                     <li>
                         <Link onClick={() => setOpen(!open)} href={'/service'}>
 
-                            <p className='cursor-pointer'>SERVICES</p>
+                            <p className='cursor-pointer uppercase'>Web Development</p>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={() => setOpen(!open)} href={'/service/search-engine-optimisation'}>
+
+                            <p className='cursor-pointer'>SEO</p>
                         </Link>
                     </li>
                     <li>
@@ -44,7 +50,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link onClick={() => setOpen(!open)} href={'/contactUs'}>
-                         <MAINBTN title={"CONTACT"}></MAINBTN>
+                            <MAINBTN title={"CONTACT"}></MAINBTN>
                         </Link>
                     </li>
                 </ul>

@@ -5,9 +5,9 @@ import { MAINBTN } from '../Modules/Buttons/Buttons';
 
 const SeoCTA = () => {
     return (
-        <div className='pb-20'>
+        <div className='px-6 pb-20'>
             <h3 className='text-center h1-bold text-primary-1 '>Embark on Your SEO Journey Today</h3>
-            <p className='text-center section-desc py-5 px-60'>
+            <p className='text-center section-desc py-5 px-2 lg:px-60'>
                 <Balancer>
                     Select the package that aligns with your business aspirations, and let Resdium Digital guide you toward SEO excellence. Transform your online presence, outrank competitors, and achieve digital success that goes beyond expectations. Your journey to SEO triumph begins here.
                 </Balancer>

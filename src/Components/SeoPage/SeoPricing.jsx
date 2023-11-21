@@ -6,7 +6,7 @@ const SeoPricing = () => {
     const [MonthlyPricing, setMonthlyPricing] = useState(true);
 
     return (
-        <div className='w-full px-20 py-20 '>
+        <div className='w-full px-6 lg:px-20 py-20 '>
             <div className='text-center'>
 
                 <span className='px-4 py-2 font-semibold  bg-[#DCFCE7] text-[#3C6E71]'>PRICING</span>
@@ -23,7 +23,7 @@ const SeoPricing = () => {
                     </label>
                 </div>
 
-                <div className='grid-cols-3 py-20 grid gap-14'>
+                <div className='grid-cols-1 px-6 md:grid-cols-3 py-20 grid gap-14'>
                     {
                         SeoPricingConst.map((data, i) => <PricingCard MonthlyPricing={MonthlyPricing} data={data} key={i} i={i} />)
                     }
