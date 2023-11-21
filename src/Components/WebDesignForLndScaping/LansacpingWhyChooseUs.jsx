@@ -13,7 +13,7 @@ const LansacpingWhyChooseUs = () => {
                     At Resdium Digital, we understand the landscaping industry inside and out. We combine <br className="md:block hidden" /> our extensive web design and development expertise with a deep appreciation for your  <br className="md:block hidden" /> business niche to provide you with a comprehensive package that includes:
                 </Balancer>
             </p>
-            <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 pt-16 gap-14">
+            <div className="grid md:grid-cols-2 place-items-center grid-cols-2 lg:grid-cols-3 pt-16 gap-6 md:gap-14">
                 {
                     WebDesignForLandscapingWhyChooseUs.map((feature, i) => <FeatureCard key={i} data={feature} />)
                 }
@@ -26,14 +26,14 @@ const LansacpingWhyChooseUs = () => {
 export default LansacpingWhyChooseUs;
 
 
-const FeatureCard = ({ data }) => {
+export const FeatureCard = ({ data }) => {
 
     const { icon, title, desc, alt } = data
 
-    return <div className="flex  flex-col justify-center items-center">
-        <Image src={icon} alt={alt} width={64} height={64} />
+    return <div className="flex  flex-col justify-start md:justify-center md:items-center">
+        <Image src={icon} alt={alt} className="md:w-[64px] w-[40px] " width={64} height={64} />
         <h3 className="h3-semibold pt-2 pb-2 text-[#2A3342]">{title}</h3>
-        <p className="section-desc  text-[#666666da] text-center">
+        <p className="font-medium leading-[110%] text-sm md:text-lg px-0 lg:px-2 text-[#3b3b3bec] text-start lg:text-center">
             <Balancer>
                 {
                     desc
