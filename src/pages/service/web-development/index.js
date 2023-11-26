@@ -10,9 +10,7 @@ const Service = () => {
   return (
     <section>
       <Head>
-        <title>
-          Services | Resdium Digital
-        </title>
+        <title>Services | Resdium Digital</title>
         <meta
           name="description"
           content="Elevate your online presence with Resdium's professional web development services. Our custom solutions deliver seamless user experiences and innovative digital transformations for lasting impact."
@@ -30,8 +28,14 @@ const Service = () => {
           property="og:image"
           content="https://res.cloudinary.com/djnlyzsmv/image/upload/v1693558278/resdium-assets/Residum_p4cu5m.png"
         />
-        <meta property="og:url" content="https://resdium.live/service" />
-        <link rel="canonical" href="https://resdium.live/service" />
+        <meta
+          property="og:url"
+          content="https://resdium.live/service/web-development"
+        />
+        <link
+          rel="canonical"
+          href="https://resdium.live/service/web-development"
+        />
 
         <meta property="og:type" content="website" />
       </Head>
