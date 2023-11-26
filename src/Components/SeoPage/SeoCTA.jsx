@@ -5,7 +5,7 @@ import { MAINBTN } from '../Modules/Buttons/Buttons';
 
 const SeoCTA = () => {
     return (
-        <div className='px-6 pb-20'>
+        <div className='px-6 pb-40'>
             <h3 className='text-center h1-bold text-primary-1 '>Embark on Your SEO Journey Today</h3>
             <p className='text-center section-desc py-5 px-2 lg:px-60'>
                 <Balancer>

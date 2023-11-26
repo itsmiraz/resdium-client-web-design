@@ -8,27 +8,27 @@ export const WhyChooseResdiumDigitalSeo = {
       desc: "Leaders in SEO trends; our experts ensure your business thrives in the evolving digital landscape.",
     },
     {
-      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1700319067/serice-pages-for-different-buisness/industry-expertise-icon_xw7e26.webp",
+      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1701002246/icons/Tailored_Strategies_u8utgo.webp",
       title: "Tailored Strategies",
       desc: "Unique businesses, unique strategies. Customize SEO for maximum impact and results.",
     },
     {
-      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1700319067/serice-pages-for-different-buisness/industry-expertise-icon_xw7e26.webp",
+      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1701002246/icons/Transparent_Processes_nvlvhl.webp",
       title: "Transparent Processes",
       desc: "Unprecedented transparency. From audits to reports, witness tangible results every step.",
     },
     {
-      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1700319067/serice-pages-for-different-buisness/industry-expertise-icon_xw7e26.webp",
+      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1701002246/icons/Data-Driven_Decisions_edoysm.webp",
       title: "Data-Driven Decisions",
       desc: "Numbers speak volumes. Our strategies, rooted in data, ensure measurable success.",
     },
     {
-      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1700319067/serice-pages-for-different-buisness/industry-expertise-icon_xw7e26.webp",
+      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1701002246/icons/Collaborative_Partnership_akpkqq.webp",
       title: "Collaborative Partnership",
       desc: "Your success is ours. Partnerships, milestones, challenges - we navigate together.",
     },
     {
-      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1700319067/serice-pages-for-different-buisness/industry-expertise-icon_xw7e26.webp",
+      icon: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1701002246/icons/Innovative_Solutions_tmsdqo.webp",
       title: "Innovative Solutions",
       desc: "Discover innovation with Resdium. Our creative strategies redefine possibilities.",
     },
@@ -43,22 +43,22 @@ export const HowItWorksSeo = {
     {
       subtitle: "Strategic Planning",
       content:
-        "Crafting success begins with a plan. We strategize meticulously, identifying opportunities, analyzing challenges, and paving the way for a tailored SEO roadmap that leads to digital triumph.",
+        "Crafting success begins with a plan. We strategize meticulously, identifying opportunities, analyzing challenges.",
     },
     {
       subtitle: "Continuous Innovation",
       content:
-        "In the dynamic world of SEO, standing still is falling behind. Our team thrives on continuous innovation, adapting strategies to stay ahead of search engine algorithms and ensure your business remains in the spotlight.",
+        "In the dynamic world of SEO, standing still is falling behind. Our team thrives on continuous innovation.",
     },
     {
       subtitle: "Client-Centric Focus",
       content:
-        "Your goals guide our actions. We listen, understand, and align our efforts with your business objectives. Resdium Digital is more than an agency; we're your dedicated partner on the path to digital greatness.",
+        "Your goals guide our actions. We listen, understand, and align our efforts with your business objectives.",
     },
     {
       subtitle: "Results-Driven Execution",
       content:
-        "Ideas are powerful, but execution is paramount. We translate strategy into action, implementing SEO solutions that deliver tangible results. Watch as your online presence flourishes and your business scales new heights.",
+        "Ideas are powerful, but execution is paramount. We translate strategy into action, implementing SEO solutions that deliver tangible results. ",
     },
   ],
 };
