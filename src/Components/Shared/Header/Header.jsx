@@ -27,7 +27,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={() => setOpen(!open)} href={'/service'}>
+                        <Link onClick={() => setOpen(!open)} href={'/service/web-development'}>
 
                             <p className='cursor-pointer uppercase'>Web Development</p>
                         </Link>

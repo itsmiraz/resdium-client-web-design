@@ -12,9 +12,7 @@ import {
 import { Balancer } from "react-wrap-balancer";
 
 const ContactUs = () => {
-  const [Service, setService] = useState("");
-  const [Package, setPackage] = useState("");
-const [loading, setloading] = useState(false);
+  const [loading, setloading] = useState(false);
 
   const handleForm = e => {
     e.preventDefault();
@@ -22,28 +20,26 @@ const [loading, setloading] = useState(false);
     const form = e.target;
     const name = form.name.value;
     const Email = form.email.value;
-    const linkedin = form.linkedin.value;
+    const conatactNo = form.contactNo.value;
     const companyName = form.company.value;
+    const role = form.role.value;
     const message = form.message.value;
 
     const formData = {
       name,
       Email,
-      linkedin,
       companyName,
-      Service,
-      Package,
+      role,
+      conatactNo,
       message,
     };
-    setloading(true)
-    sendEmail(formData)
-    console.log(formData);
-    form.reset()
-    setService('')
+    setloading(true);
+    sendEmail(formData);
+    form.reset();
   };
 
   // Send the email
-  const sendEmail = ( formData ) => {
+  const sendEmail = formData => {
     emailjs
       .send(
         "service_okq3dcd",
@@ -54,7 +50,9 @@ const [loading, setloading] = useState(false);
       .then(response => {
         console.log("Email sent successfully!", response.text);
         // Perform any desired actions upon successful email sending
-        toast.success("We got your Email we will get back to you as soon as possible")
+        toast.success(
+          "We got your Email we will get back to you as soon as possible"
+        );
         setloading(false);
       })
       .catch(error => {
@@ -75,7 +73,6 @@ const [loading, setloading] = useState(false);
           content="Get in touch with Resdium, a web solutions agency, for all your web-related needs. Contact us for web design, development, and other digital solutions."
         ></meta>
         <link rel="canonical" href="https://resdium.live/contactUs" />
-
       </Head>
 
       <div className="absolute inner-shadow z-10 top-0 left-0 h-[591px] w-full bg-gradient-to-l from-[#1d2a42] to-[#3C6E71]  md:rounded-bl-[40px]"></div>
@@ -178,72 +175,17 @@ const [loading, setloading] = useState(false);
                 className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
-            {/* Linkedin */}
+            {/* Contact No */}
             <div>
               <label htmlFor="" className="block text-sm font-medium py-2 ">
-                Linkedin
+                Contact No.
               </label>
               <input
                 required
                 type="text"
-                name="linkedin"
+                name="contactNo"
                 className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
-            </div>
-
-            {/* Type */}
-            <div>
-              <label htmlFor="" className="block text-sm font-medium py-2 ">
-                Select the type of website you want
-              </label>
-              <select
-                value={Package}
-                required
-                onChange={e => setPackage(e.target.value)}
-                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
-                name=""
-                id=""
-              >
-                <option disabled value="">
-                  Choose an Option
-                </option>
-                <option value="Real Estate Company Website">
-                  Real Estate Company Website
-                </option>
-                <option value="E-commerce Web Site">E-commerce Web Site</option>
-                <option value="Blog Web Site">Blog Web Site</option>
-                <option value="Portfolio Web Site">Portfolio Web Site</option>
-                <option value="Landing Page Web Site">
-                  Landing Page Web Site
-                </option>
-                <option value="News Portal">News Portal Web Site</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            {/* Type */}
-            <div>
-              <label htmlFor="" className="block text-sm font-medium py-2 ">
-              Choose Your Package
-              </label>
-              <select
-                value={Service}
-                required
-                onChange={e => setService(e.target.value)}
-                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
-                name=""
-                id=""
-              >
-                <option disabled value="">
-                  Choose an Option
-                </option>
-                <option value="Bronze">
-                Bronze
-                </option>
-                <option value="Silver">Silver</option>
-                <option value="Premium">Premium</option>
-                <option value="Custom">Custom (Recommended)</option>
-             
-              </select>
             </div>
 
             {/* Company Name */}
@@ -255,6 +197,18 @@ const [loading, setloading] = useState(false);
                 type="text"
                 required
                 name="company"
+                className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
+              />
+            </div>
+            {/* Company Name */}
+            <div>
+              <label htmlFor="" className="block text-sm font-medium py-2 ">
+                Your Role in the Company
+              </label>
+              <input
+                type="text"
+                required
+                name="role"
                 className="w-full focus:outline-[#2e688f] bg-slate-200 p-2 rounded-ss-md rounded-ee-md"
               />
             </div>
@@ -272,7 +226,7 @@ const [loading, setloading] = useState(false);
               />
             </div>
             <button className="teal-green-to-deep-blue-gradient w-full  text-white  px-4 py-3 font-medium  rounded-corners-sm">
-           { loading?  "Loading":" SUBMIT"}
+              {loading ? "Loading" : " SUBMIT"}
             </button>
           </form>
         </div>

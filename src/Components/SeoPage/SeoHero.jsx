@@ -2,6 +2,7 @@
 import React from 'react';
 import { MAINBTN } from '../Modules/Buttons/Buttons';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SeoHero = () => {
     return (
@@ -15,7 +16,12 @@ const SeoHero = () => {
             <p className='section-desc text-center pb-6 text-primary-1'>
                 Embark on a journey to digital prominence with Resdium Digital's cutting-edge SEO solutions. We don't just <br className='md:block hidden' /> optimize  websites; we craft digital success stories. Elevate your online presence, outrank competitors, and  <br className='md:block hidden' /> seize new opportunities. Your journey to SEO excellence starts here.
             </p>
-            <MAINBTN title={'GET STARTED'} />
+            <div>
+                <Link href={'#pricing'}>
+
+                    <MAINBTN title={'GET STARTED'} />
+                </Link>
+            </div>
             <Image src={"https://res.cloudinary.com/djnlyzsmv/image/upload/v1700547478/resdium-assets/Service%20Page/seo-hero-resdium-digital-min_vkvy8z.webp"} alt='seo-hero-resdium' width={944} height={531} className='mt-6  hidden md:block ' />
         </div>
     );
