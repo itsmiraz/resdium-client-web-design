@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line react/no-unescaped-entities
 import Head from "next/head";
+import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 
 const WebDesignInUtah = () => {
@@ -26,16 +27,28 @@ const WebDesignInUtah = () => {
         />
       </Head>
 
-      <div>
-        <h1>Utah's Trusted Web Design Partner: Grow Your Business Online</h1>
-        <p>
+      <div className="py-20">
+        <h1 className="text-[56px] text-center leading-[100%] text-[#22323F] font-bold">
+          Utah's Trusted Web <br /> Design Partner: Grow Your <br /> Business
+          Online
+        </h1>
+        <p className="text-center text-[18px] mt-6">
           <Balancer>
             Resdium Digital crafts captivating, results-driven websites that
-            elevate brands in Utah and beyond. With a focus on excellence and
-            innovation, we deliver tailor-made solutions that exceed
+            elevate brands in Utah and <br /> beyond. With a focus on excellence
+            and innovation, we deliver tailor-made solutions that exceed <br />
             expectations and leave a lasting impression.
           </Balancer>
         </p>
+        <Image
+          width={1200}
+          height={700}
+          className="mx-auto w-full h-fit my-7"
+          src={
+            "https://res.cloudinary.com/djnlyzsmv/image/upload/v1709373882/resdium-assets/location-based-pages/utah-image_tfl3i4.webp"
+          }
+          alt="utah-image"
+        />
       </div>
     </main>
   );
