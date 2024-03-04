@@ -58,7 +58,7 @@ const Header = () => {
 
             {/* Toogle Button */}
             <div className='lg:hidden block'>
-                <button onClick={() => setOpen(!open)} className='text-2xl'>
+                <button name='menu' onClick={() => setOpen(!open)} className='text-2xl'>
                     {
                         open ?
                             <AiOutlineClose />
