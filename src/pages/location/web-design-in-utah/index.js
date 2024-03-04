@@ -39,6 +39,8 @@ const WebDesignInUtah = () => {
         <Image
           width={1200}
           height={700}
+          lazy="false"
+          loading="eager"
           className="mx-auto md:hidden block w-full h-fit my-7"
           src={
             "https://res.cloudinary.com/djnlyzsmv/image/upload/v1709373882/resdium-assets/location-based-pages/utah-image_tfl3i4.webp"
@@ -61,6 +63,8 @@ const WebDesignInUtah = () => {
         <Image
           width={1200}
           height={700}
+          lazy="false"
+          loading="eager"
           className="mx-auto hidden md:block w-full h-fit my-7"
           src={
             "https://res.cloudinary.com/djnlyzsmv/image/upload/v1709373882/resdium-assets/location-based-pages/utah-image_tfl3i4.webp"
