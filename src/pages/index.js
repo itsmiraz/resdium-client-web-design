@@ -6,6 +6,7 @@ import BookACall from "@/Components/LandingPage/BookACall/BookACall";
 import FAQSection from "@/Components/LandingPage/FAQSections/FAQSection";
 import OurBlogsSection from "@/Components/LandingPage/OurBlogsSection/OurBlogsSection";
 import HomePageWhyChoosseUS from "@/Components/LandingPage/HomePageWhyChoosseUS/HomePageWhyChoosseUS";
+import Testimonials from "@/Components/LandingPage/Testimonial/Testimonals";
 // import WhyChoosseUS from "@/Components/AboutUsPage/WhyChoosseUS/WhyChoosseUS";
 
 export default function Home() {
@@ -56,6 +57,7 @@ export default function Home() {
       <WhatRESDIUMPROVIDES />
       <HomePageWhyChoosseUS/>
       <OurBlogsSection />
+      <Testimonials/>
       <BookACall />
       <FAQSection />
     </main>
